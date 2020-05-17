@@ -1,0 +1,55 @@
+.w-lg-50{
+  @include media-breakpoint-up(lg){
+    width: 50%;
+  }
+}
+.w-lg-100{
+  @include media-breakpoint-up(md){
+    width: 100%;
+  }
+}
+
+
+.bg{
+  
+  background-position: center ;
+  background-repeat: no-repeat;
+  
+  &__index{
+    
+    background-image: url("../images/index_tom-crew-5HRCkrSs9Dk-unsplash-1280.jpg");
+    background-size:cover;
+    background-position: center ;
+   
+    // transform:translateX(100%);
+    height: 640px;
+    @include media-breakpoint-up(md){
+      height: 800px;
+    }
+    // .banner{
+    //   transform:translateX(-100%);
+    // }
+  }
+  &__subscribe{
+    background-image: url("../images/footer__tom-crew-uDF1mW7EUwM-unsplash.jpg");
+    background-size: cover;
+    height: 224px;
+    @include media-breakpoint-up(md){
+      height: 400px;
+    }
+  }
+  &__footer{
+    background-color: #121212;
+    .navbar-nav .nav-link{
+      color: #FFFFFFDE;
+    }
+  }
+}
+.footer{
+  input[type="email"]{
+    &::placeholder{
+      color: map-get($theme-colors, third );
+    }
+  }
+  
+}
