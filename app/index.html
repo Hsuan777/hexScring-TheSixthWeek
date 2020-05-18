@@ -5,32 +5,108 @@ engine: ejs
 current: index
 ---
 <main>
-  <section class="section__index container-fluid " style="position: relative;">
-    <div class="row ">
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-6 col-12 " style="z-index: 99;">
-            <div class="d-md-block d-none">
-              <div class="section__index__text d-flex flex-column justify-content-center ">
-                <h2 class="h1 mb-3 font-weight-bold">Enjoy Your <br> Minimalist Lifestyle.</h2>
-                <p class="h2 mb-5">The best crafts in Taiwan. Get your free <br> shipping on the first order.</p>
-                <!-- TODO:在 flex的影響下，會變成滿寬， -->
-                <a href="productList.html" class="btn btn-primary btn-lg mt-5 w-25   font-weight-bold">Shop now</a>
+  <section class="section__index d-flex align-items-center mb-md-6 mb-5">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-6 col-12 " style="z-index: 99;">
+              <div class="d-md-block d-none">
+                <div class="section__index__text d-flex flex-column justify-content-center ">
+                  <h2 class="h1 mb-3 font-weight-bold">Enjoy Your <br> Minimalist Lifestyle.</h2>
+                  <p class="h2 mb-5">The best crafts in Taiwan. Get your free <br> shipping on the first order.</p>
+                  <!-- TODO:在 flex的影響下，會變成滿寬， -->
+                  <a href="productList.html" class="btn btn-primary btn-lg mt-5 w-25   font-weight-bold">Shop now</a>
+                </div>
               </div>
-            </div>
-            <div class="d-md-none">
-              <div class=" d-flex flex-column justify-content-end banner__text  text-white">
-                <h2 class="h1 mb-3 text-center font-weight-bold">Enjoy Your <br> Minimalist Lifestyle.</h2>
-                <p class="mb-5 text-third text-center">The best crafts in Taiwan. Get your free <br> shipping on all orders over NT$2,000.</p>
-                <a href="productList.html" class="btn btn-primary btn-lg mt-5  mb-3 font-weight-bold">Shop now</a>
+              <div class="d-md-none">
+                <div class=" d-flex flex-column justify-content-end  text-white">
+                  <h2 class="h1 mb-3 text-center font-weight-bold">Enjoy Your <br> Minimalist Lifestyle.</h2>
+                  <p class="mb-5 text-third text-center">The best crafts in Taiwan. Get your free <br> shipping on all
+                    orders over NT$2,000.</p>
+                  <a href="productList.html" class="btn btn-primary btn-lg mt-5  mb-3 font-weight-bold">Shop now</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="section__index__banner col-md-6 col-12  "> </div>
       </div>
-      <div class="section__index__bg col-md-6 col-12 bg " > </div>
+
     </div>
   </section>
-  
-  
+
+  <section>
+    <div class="container">
+      <!-- Special Clays -->
+      <div class="row mb-lg-4 mb-3">
+        <div class="col-md-6 col-12 mb-2 mb-md-0">
+          <img src="assets/images/index_neven-krcmarek-F1oNsAykHa0-unsplash.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6  ">
+          <div class="row justify-content-center align-items-center h-100 ">
+            <main class="col-md-8 col-12">
+              <h2 class="font-weight-bold mb-2">Special Clays</h2>
+              <p class="mb-3">A general body formulation for contemporary earthenware is 25% kaolin, 25% ball clay, 35%
+                quartz and 15% feldspar.</p>
+              <a href="" class="font-weight-bold">Learn more</a>
+            </main>
+          </div>
+        </div>
+      </div>
+
+      <!-- Less is more -->
+      <div class="row flex-lg-row-reverse mb-lg-4 mb-3">
+        <div class="col-md-6 col-12  mb-2 mb-md-0">
+          <img src="assets/images/index_anne-nygard-sHyerRuFqT4-unsplash.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 ">
+          <div class="row justify-content-center align-items-center h-100 text-lg-right ">
+            <main class="col-md-8 col-12 ">
+              <h2 class="font-weight-bold mb-2">Less is more</h2>
+              <p class="mb-3">Trimming pottery can transform a weighty Earth-bound pot into one that is a pleasure to
+                hold, look at, and use.</p>
+              <a href="" class="font-weight-bold">Learn more</a>
+            </main>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marvelous Detail -->
+      <div class="row mb-lg-6 mb-5">
+        <div class="col-md-6 col-12 mb-2 mb-md-0">
+          <img src="assets/images/index_tom-crew-GOtE6-VOwH0-unsplash.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6  ">
+          <div class="row justify-content-center align-items-center h-100 ">
+            <main class="col-8 col-12">
+              <h2 class="font-weight-bold mb-2">Marvelous Detail</h2>
+              <p class="mb-3">In Craftsman, the art director, working with marketers, develops or creates an idea of a
+                new creation.</p>
+              <a href="" class="font-weight-bold">Learn more</a>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TODO:上下拉開 -->
+  <section class="section__artDirector d-flex align-items-center ">
+    <div class="container h-100">
+      <div class="row justify-content-lg-between align-items-lg-center ">
+        <div class="col-lg-4 col-12">
+          <h3 class="text-white">“I want to make the life more simple by crafts.”</h3>
+        </div>
+        <div class="col-lg-3 col-12 ">
+          <p class="text-primary mb-0">Art Director</p>
+          <h2 class="text-white mb-2">hsiao-Ming Chen</h2>
+          <div class="d-flex ">
+            <a href="" class="mr-3 font-weight-bold">Instagram</a>
+            <a href="" class="font-weight-bold">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>

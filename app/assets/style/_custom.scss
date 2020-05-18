@@ -7,26 +7,28 @@
 
 .section {
   &__index {
+    position: relative;
     height: 640px;
     @include media-breakpoint-up(md) {
       height: 800px;
     }
-    &__text {
-      height: 640px;
-      @include media-breakpoint-up(md) {
-        height: 800px;
-      }
-    }
-    &__bg {
+    &__banner {
       position: absolute;
       background-image: url("../images/index_tom-crew-5HRCkrSs9Dk-unsplash-1280.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      right: 0;
       top: 0;
       bottom: 0;
+      right: 0;
     }
+  }
+  &__artDirector{
+    background-image: url("../images/index_burningparrot-u2Xn5Bzvllw-unsplash.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:  400px;
   }
   &__subscribe {
     background-image: url("../images/footer__tom-crew-uDF1mW7EUwM-unsplash.jpg");
@@ -44,7 +46,7 @@
 
 
 .footer {
-  margin-top: 100vw;
+  margin-top: 20vw;
   input[type="email"] {
     &::placeholder {
       color: map-get($theme-colors, third);
