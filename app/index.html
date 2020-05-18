@@ -5,22 +5,32 @@ engine: ejs
 current: index
 ---
 <main>
-  <div class="bg bg__index">
-    <div class="banner container h-100">
-      <div class="row  h-100">
-        <div class="col-12 h-100">
-
-          <div class="d-flex flex-column justify-content-center h-100">
-            <h2 class="h1 mb-3 ">Enjoy Your <br> Minimalist Lifestyle.</h2>
-            <p class="h2 mb-5">The best crafts in Taiwan. Get your free <br> shipping on the first order.</p>
-            <a href="productList.html" class="btn btn-primary btn-lg mt-5 mt-md-0 w-25">Shop now</a>
+  <section class="section__index container-fluid " style="position: relative;">
+    <div class="row ">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 col-12 " style="z-index: 99;">
+            <div class="d-md-block d-none">
+              <div class="section__index__text d-flex flex-column justify-content-center ">
+                <h2 class="h1 mb-3 font-weight-bold">Enjoy Your <br> Minimalist Lifestyle.</h2>
+                <p class="h2 mb-5">The best crafts in Taiwan. Get your free <br> shipping on the first order.</p>
+                <!-- TODO:在 flex的影響下，會變成滿寬， -->
+                <a href="productList.html" class="btn btn-primary btn-lg mt-5 w-25   font-weight-bold">Shop now</a>
+              </div>
+            </div>
+            <div class="d-md-none">
+              <div class=" d-flex flex-column justify-content-end banner__text  text-white">
+                <h2 class="h1 mb-3 text-center font-weight-bold">Enjoy Your <br> Minimalist Lifestyle.</h2>
+                <p class="mb-5 text-third text-center">The best crafts in Taiwan. Get your free <br> shipping on all orders over NT$2,000.</p>
+                <a href="productList.html" class="btn btn-primary btn-lg mt-5  mb-3 font-weight-bold">Shop now</a>
+              </div>
+            </div>
           </div>
-
         </div>
-        
       </div>
+      <div class="section__index__bg col-md-6 col-12 bg " > </div>
     </div>
-  </div>
-
-
+  </section>
+  
+  
 </main>

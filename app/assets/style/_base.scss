@@ -4,11 +4,7 @@ html{
 }
 
 h1, .h1 {
-  font-size: 2rem;
-  @include media-breakpoint-up(md){
-    
-    font-size: 3rem;
-  }
+  font-size: 3rem;
 }
 
 h2, .h2 {
