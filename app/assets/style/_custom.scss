@@ -24,11 +24,43 @@
     }
   }
   &__artDirector{
-    background-image: url("../images/index_burningparrot-u2Xn5Bzvllw-unsplash.jpg");
+      background-image: url("../images/index_burningparrot-u2Xn5Bzvllw-unsplash.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       height:  400px;
+  }
+  &__carouselProduct{
+    &__img{
+      position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 350px;
+      height: 350px;
+      &--mark{
+        &::before{
+          position: absolute;
+          content: 'On Sale';
+          color: white;
+          top:16px;
+          right: 16px;
+        }
+      }
+      &__1{
+        background-image: url("../images/tom-crew-XtyxEBiA8D8-unsplash.jpg");
+      }
+      &__2{
+        background-image: url("../images/tom-crew-7HuTGlUfQSo-unsplash.jpg");
+      }
+      &__3{
+        background-image: url("../images/tom-crew-8_ldgq801cE-unsplash.jpg");
+      }
+      &__4{
+        background-image: url("../images/tom-crew-bgIO-u4GEfI-unsplash.jpg");
+      }
+    }
+
   }
   &__subscribe {
     background-image: url("../images/footer__tom-crew-uDF1mW7EUwM-unsplash.jpg");
@@ -46,7 +78,6 @@
 
 
 .footer {
-  margin-top: 20vw;
   input[type="email"] {
     &::placeholder {
       color: map-get($theme-colors, third);
