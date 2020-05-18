@@ -31,13 +31,22 @@
       height:  400px;
   }
   &__carouselProduct{
+    &__table{
+      overflow-x:hidden;
+
+      // overflow:visible
+    }
     &__img{
       position: relative;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      width: 350px;
-      height: 350px;
+      width: 240px;
+      height: 240px;
+      @include media-breakpoint-up(md) {
+        width: 350px;
+        height: 350px;
+      }
       &--mark{
         &::before{
           position: absolute;
