@@ -1,0 +1,26 @@
+.modal.right .modal-dialog{
+  position: fixed;
+  right: 0;
+  margin: auto;
+  width: 540px;
+  height: 100%;
+  // 從右到左出現
+  transition:translate3d(0%,0,0);
+}
+
+// 變更內容樣式
+.modal.right .modal-content{
+  height: 100%;
+  overflow-y: auto;
+}
+// 變更外觀樣式
+.modal-content{
+  border-radius: 0;
+  border: none;
+}
+.modal-header{
+  border-bottom: 0;
+}
+.modal-footer{
+  border-top: 0;
+}
