@@ -6,17 +6,25 @@ current: productList
 ---
 
 <main>
-  <nav class="navbar navbar-expand-md  navbar-light bg-light ">
+  <!-- TODO:似乎使用單純的導覽比較好? -->
+  <nav class="nav__productList navbar flex-row  navbar-light bg-light ">
     <div class="container">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link rounded mr-5 active" href="">ALL24 </a>
-        <a class="nav-item nav-link rounded mr-5" href="#">BOWL10</a>
-        <a class="nav-item nav-link rounded mr-5" href="#">CUP8</a>
-        <a class="nav-item nav-link rounded mr-5" href="#">PLATE3</a>
-        <a class="nav-item nav-link rounded mr-5" href="#">VASE3</a>
+      <div class="row ">
+        <div class="col">
+          <div class="navbar-nav flex-row font-weight-bold">
+            <a class="nav-item nav-link rounded  mr-md-5 mr-3 pl-0 active" href="#">All <sup>24</sup> </a>
+            <a class="nav-item nav-link rounded  mr-md-5 mr-3" href="#">Bowl <sup>10</sup></a>
+            <a class="nav-item nav-link rounded  mr-md-5 mr-3" href="#">Cup <sup class="digits">8</sup></a>
+            <a class="nav-item nav-link rounded  mr-md-5 mr-3" href="#">Plate <sup class="digits">3</sup></a>
+            <a class="nav-item nav-link rounded  " href="#">Vase <sup class="digits">3</sup></a>
+          </div>
+
+        </div>
       </div>
     </div>
   </nav>
 
- 
+
+
+
 </main>

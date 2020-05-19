@@ -1,8 +1,3 @@
-.navbar-expand-md {
-  .navbar-collapse .nav-link:hover {
-    background-color: map-get($theme-colors, third);
-  }
-}
 
 
 .section {
@@ -33,8 +28,6 @@
   &__carouselProduct{
     &__table{
       overflow-x:hidden;
-
-      // overflow:visible
     }
     &__img{
       position: relative;
@@ -83,6 +76,33 @@
   }
 }
 
+.nav{
+  &__productList{
+    .nav-link{
+      position: relative;
+      @include media-breakpoint-up(md) {
+        font-size: 24px;
+      }
+      sup{
+        position: absolute;
+        font-size: 10px;
+        top: 18px;
+        right: -12px;
+        @include media-breakpoint-up(md) {
+          font-size: 12px;
+          top: 20px;
+          right: -14px;
+        }
+        &.digits{
+          right: -8px;
+          @include media-breakpoint-up(md) {
+            right: -10px;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -90,12 +110,6 @@
   input[type="email"] {
     &::placeholder {
       color: map-get($theme-colors, third);
-    }
-  }
-  .navbar-dark{
-    background-color: #121212;
-    .navbar-nav .nav-link {
-      color: #ffffffde;
     }
   }
 }
