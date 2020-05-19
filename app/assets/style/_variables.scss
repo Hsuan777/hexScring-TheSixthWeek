@@ -30,5 +30,14 @@ $navbar-dark-color:white;
 $navbar-dark-hover-color: map-get($theme-colors, primary);
 
 // a
-// $link-color:black;
-// $link-hover-color:map-get($theme-colors, primary);
+$link-color:black;
+$link-hover-color:map-get($theme-colors, primary);
+
+
+// .active .page-link
+// color
+$pagination-active-color: map-get($theme-colors, primary);
+// background-color
+$pagination-active-bg: white;
+// border-color
+
