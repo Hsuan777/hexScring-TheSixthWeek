@@ -1,0 +1,49 @@
+---
+title: ProductList
+layout: ./app/layout.ejs
+engine: ejs
+current: productList
+---
+<main>
+  <section class="section__product  mb-6">
+    <div class="container" style="position: relative;">
+
+        <div class="row align-items-center  product__item " >
+          <div class="col-8 " style="position: absolute; top: 0; ">
+            <div class="product__img product__img__1 product__img--markLeft product__item rounded"></div>
+          </div>
+          <div class="col-5 ml-auto">
+            <div class="card">
+               <div class="card-head ">
+                  <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb bg-white mb-2">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="productList.html">Product</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cup</li>
+                      </ol>
+                  </nav>
+                </div>
+                <div class="card-body py-0 mb-3 pr-0">
+                  <h2 class="h1 font-weight-bold">Tatami Cup</h2>
+                  <p class="text-right text-black-50 mb-0"><del >NT$1,200</del></p>
+                  <h2 class="font-weight-bold text-right">NT$1,080</h2>
+                </div>
+                <div class="card-footer d-flex justify-content-end bg-white border-top-0  pr-0 ">
+                    
+                        <nav aria-label="Page navigation ">
+                          <ul class="pagination  mr-1">
+                            <li class="page-item"><a class="page-link border-0 bg-light " href="#">-</a></li>
+                            <li class="page-item"><a class="page-link border-0 bg-light" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link border-0 bg-light" href="#">+</a></li>
+                          </ul>
+                        </nav>
+                      
+                    <button class="btn btn-primary  w-100">Add to cart</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+</main>

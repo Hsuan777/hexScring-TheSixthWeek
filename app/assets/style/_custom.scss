@@ -26,6 +26,12 @@
   &__product {
     
     .product {
+      &__item{
+        height: 360px;
+        @include media-breakpoint-up(md) {
+          height: 442px;
+        }
+      }
       &__carouselItem {
         width: 240px;
         height: 240px;
@@ -63,6 +69,16 @@
             right: 16px;
           }
         }
+        &--markLeft {
+          &::before {
+            position: absolute;
+            content: "On Sale";
+            color: white;
+            top: 16px;
+            left: 16px;
+          }
+        }
+
         &__1 {
           // Tatami Cup
           background-image: url("../images/tom-crew-XtyxEBiA8D8-unsplash.jpg");
