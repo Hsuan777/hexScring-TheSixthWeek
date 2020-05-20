@@ -14,14 +14,14 @@ current: product
     <div class=" product__item container mt-lg-0 mt-n4" style="position: relative;">
       <div class="row align-items-lg-center align-items-start   h-100 ">
         <div class="col-xl-8 col-lg-7 d-none d-lg-block" style="position: absolute; top:0;">
-          
+
           <div class="product__img product__img__1 product__img--markLeft product__item  rounded"></div>
-         
+
         </div>
         <div class="col-xl-5 col-lg-6 col-12 ml-auto">
           <div class="card border-0 pl-4">
             <div class="card-head ">
-              <nav aria-label="breadcrumb" >
+              <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-white pl-0 pt-0 mb-0 mt-4">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item"><a href="productList.html">Product</a></li>
@@ -52,36 +52,87 @@ current: product
             <div class="card-footer d-flex justify-content-end bg-white border-top-0 pl-0 pr-md-0 pt-0 pb-4">
 
               <!-- 數量 -->
-              <nav aria-label="Page navigation" class="d-md-block d-none">
-                <ul class="pagination pagination-lg  mr-1" >
+              <nav aria-label="number navigation" class="d-md-block d-none">
+                <ul class="pagination pagination-lg  mr-1">
                   <li class="page-item"><a class="page-link border-0 bg-light " href="#">-</a></li>
                   <li class="page-item"><a class="page-link border-0 bg-light" href="#">1</a></li>
                   <li class="page-item"><a class="page-link border-0 bg-light" href="#">+</a></li>
                 </ul>
               </nav>
 
-              <button class="btn btn-primary btn-lg  w-100">Add to cart</button>
+              <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcar">Add to
+                cart</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
+    <!-- 購物車 modal -->
+    <div class="modal.right modal fade" id="shopcar" tabindex="-1" role="dialog" aria-labelledby="userInfo"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-5">
+
+          <!-- 購物清單 -->
+          <div class="d-flex justify-content-between">
+            <h2 class="h1 mb-0 font-weight-bold"> <span>Cart List <sup class="text-primary">3</sup></span> </h2>
+            <button type="button" class="btn  pr-0" data-dismiss="modal" aria-label="Close">
+              <span class="material-icons h1"> close </span>
+            </button>
+          </div>
+
+          <!-- 購物車商品 -->
+          <div class=" media pr-2 bg-light">
+            <div class="product__shopcarItem  product__img product__img__1  "></div>
+            <div class="media-body p-1">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="font-weight-bold mb-0">Tatami Cup</p>
+                <button type="button" class="btn pb-0 pr-0">
+                  <span class="material-icons "> close </span>
+                </button>
+              </div>
+              <!-- 原始價格 -->
+              <p class="text-secondary mb-2">NT$1,080<del class="ml-1 text-black-50 h6">NT$1,200</del></p>
+
+              <!-- 數量與價格 -->
+              <div class="d-flex justify-content-between align-items-center">
+                <nav aria-label="number navigation" class="d-md-block d-none">
+                  <ul class="pagination pagination-sm ">
+                    <li class="page-item"><a class="page-link border-0 bg-light " href="#">-</a></li>
+                    <li class="page-item"><a class="page-link border-0 bg-light" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link border-0 bg-light" href="#">+</a></li>
+                  </ul>
+                </nav>
+                <p class="font-weight-bold mb-0 ">NT$1,080</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </section>
 
+  <!-- 產品描述 -->
   <section>
     <div class="container mb-lg-6 mb-5 pt-lg-3 ">
       <div class="row">
         <div class="col-12 col-lg-8">
           <div class="row">
             <div class="col-lg-7  col-12">
-              <h4 class="mb-lg-0 mb-2">This beautiful light grey cup comes from Taiwan. Add some minimalist scenes to your lifetime and use this cup for tea, coffee, dessert, or to place small items as a dish tray.</h4>
+              <h4 class="mb-lg-0 mb-2">This beautiful light grey cup comes from Taiwan. Add some minimalist scenes to
+                your lifetime and use this cup for tea, coffee, dessert, or to place small items as a dish tray.</h4>
             </div>
             <div class="col-lg-5 col-12">
-              <ul class="list-unstyled text-secondary"> 
+              <ul class="list-unstyled text-secondary">
                 <li>Made in Taiwan</li>
                 <li>8 x 8 x 6 cm</li>
                 <li>Dishwasher and Microwave-safe</li>
-              </ul> 
+              </ul>
             </div>
           </div>
         </div>
@@ -89,6 +140,7 @@ current: product
     </div>
   </section>
 
+  <!-- 可能也喜歡其他商品 -->
   <section>
     <div class="container">
       <div class="row">
@@ -100,5 +152,6 @@ current: product
       </div>
     </div>
   </section>
-  
+
+
 </main>
