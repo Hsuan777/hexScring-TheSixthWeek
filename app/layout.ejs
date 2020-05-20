@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="assets/style/all.css">
 </head>
 
-<body style="position:relative;">
+<body>
 
   <!-- TODO:背景透明，會導致在某些區域不明顯 -->
   <nav class="js__nav navbar navbar-expand-md  navbar-light bg-transparent mb-5">
@@ -38,16 +38,16 @@
         <span class="material-icons "> dehaze </span>
       </button>
 
-      <!-- LOGO -->
-      <a class="navbar-brand" href="index.html">
-        <h1 class="text__Raleway h2 d-md-none"> Craftsman</h1>
+      <!-- LOGO， .navbar-light會影響 .navbar-brand-->
+      <a href="index.html">
+        <h1 class="text__Raleway h2 text-white d-md-none "> Craftsman</h1>
         <h1 class="text__Raleway h2 text-dark d-md-block d-none"> Craftsman</h1>
       </a>
 
       <!-- 導覽列，md以上顯示 -->
       <div class="d-md-block d-none ml-md-auto ">
         <div class="navbar-nav  align-items-center font-weight-bold">
-          <a class="nav-item nav-link rounded mr-5 " href="productList.html">Product </a>
+          <a class="nav-item nav-link rounded mr-5 custom__text" href="productList.html">Product </a>
           <a class="nav-item nav-link rounded mr-5 " href="#">Blog</a>
           <a class="nav-item nav-link rounded mr-5" href="#">Contact</a>
           <a class="nav-item nav-link rounded d-none d-md-block" href="#">
@@ -56,11 +56,13 @@
         </div>
       </div>
 
-      <!-- 購物車 icon，md以上隱藏 ，navbar-nav -->
-      <a class="nav-item nav-link d-md-none text-white" href="#"><span class="material-icons"> shopping_cart </span></a>
+      <!-- 購物車 icon，md以上隱藏，.navbar-nav會隨著 .navbar-light變更樣式-->
+      <div class="navbar-nav">
+        <a class="nav-item nav-link d-md-none " href="#"><span class="material-icons"> shopping_cart </span></a>
+      </div>
 
       <!-- 導覽列收合內容 -->
-      <div class="collapse navbar-collapse custom__collapse" id="navbarNavAltMarkup">
+      <div class=" custom__collapse collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav font-weight-bold bg-white p-2 ">
           <!-- 收合開關與購物車 icon -->
           <div class="d-flex justify-content-between align-items-center">
@@ -76,30 +78,40 @@
 
           <!-- 導覽列 -->
           <div class="d-flex justify-content-between border-bottom border-black-50">
-            <a class="nav-item nav-link  py-2 text-dark" href="productList.html">Product
+            <a class="nav-item nav-link  py-2 text-dark h3 mb-0" href="productList.html">Product
             </a>
             <button class="btn btn-link  pr-0" type="button" data-toggle="collapse" data-target="#productList__view"
               aria-expanded="false" aria-controls="userInfo__view">
-              <span class="material-icons text-dark js-more "> expand_more </span>
+              <span class="js-more material-icons text-dark  "> expand_more </span>
             </button>
           </div>
           <div id="productList__view" class="collapse  border-bottom border-black-50">
             <nav class="nav__productList navbar  bg-white">
               <div class="navbar-nav  font-weight-bold">
-                <a class="nav-item nav-link rounded  text-secondary" href="#">All <sup>24</sup> </a>
-                <a class="nav-item nav-link rounded  text-secondary" href="#">Bowl <sup>10</sup></a>
-                <a class="nav-item nav-link rounded  text-secondary" href="#">Cup <sup class="digits">8</sup></a>
-                <a class="nav-item nav-link rounded  text-secondary" href="#">Plate <sup class="digits">3</sup></a>
-                <a class="nav-item nav-link rounded  text-secondary" href="#">Vase <sup class="digits">3</sup></a>
+                <a class="nav-item nav-link rounded  text-secondary" href="#">
+                  <span class="nav-link__text">All <sup>24</sup></span>  
+                </a>
+                <a class="nav-item nav-link rounded  text-secondary" href="#">
+                  <span class="nav-link__text">Bowl <sup>10</sup></span> 
+                </a>
+                <a class="nav-item nav-link rounded  text-secondary" href="#">
+                  <span class="nav-link__text">Cup <sup class="digits">8</sup></span>  
+                </a>
+                <a class="nav-item nav-link rounded  text-secondary" href="#">
+                  <span class="nav-link__text">Plate <sup class="digits">3</sup></span> 
+                </a>
+                <a class="nav-item nav-link rounded  text-secondary" href="#">
+                  <span class="nav-link__text">Vase <sup class="digits">3</sup></span> 
+                </a>
               </div>
             </nav>
           </div>
 
-          <a class="nav-item nav-link  py-2 border-bottom border-black-50 text-dark" href="#">Blog</a>
-          <a class="nav-item nav-link  py-2 border-bottom border-black-50 text-dark" href="#">Contact</a>
+          <a class="nav-item nav-link  py-2 border-bottom border-black-50 text-dark h3 mb-0" href="#">Blog</a>
+          <a class="nav-item nav-link  py-2 border-bottom border-black-50 text-dark h3 mb-0" href="#">Contact</a>
         </div>
       </div>
-      
+
     </div>
   </nav>
 

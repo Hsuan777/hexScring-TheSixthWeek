@@ -147,7 +147,7 @@
 
 .nav {
   &__productList {
-    .nav-link {
+    .nav-link__text {
       position: relative;
       @include media-breakpoint-up(md) {
         font-size: 24px;
@@ -155,17 +155,17 @@
       sup {
         position: absolute;
         font-size: 10px;
-        top: 18px;
+        top: 7px;
         right: -12px;
         @include media-breakpoint-up(md) {
           font-size: 12px;
-          top: 20px;
+          top: 10px;
           right: -14px;
         }
         &.digits {
-          right: -8px;
+          right: -7px;
           @include media-breakpoint-up(md) {
-            right: -10px;
+            right: -8px;
           }
         }
       }
@@ -188,30 +188,28 @@
   }
 }
 
-// .collapse {
-//   transform: translateX(-100%);
+.custom {
+  &__text{
+    @include media-breakpoint-only(md){
+      background: linear-gradient(to right,black,white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    } 
+  }
+  &__collapse {
+    // display: block;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: all 0.35s;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
 
-//   &.collapsing {
-//     height: 100%;
-//     transition: width 0.35s ease;
-//   }
-//   &.show {
-//     transition: all 0.35s;
-//     transform: translateX(0%);
-//   }
-// }
-.custom__collapse {
-  position: absolute;
-  transform: translateX(-100%);
-  transition: all 0.35s;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 99;
-  height: 100%;
-  
-  &.show {
-    transform: translateX(0%);
+    &.show {
+      transform: translateX(0%);
+    }
   }
 }
