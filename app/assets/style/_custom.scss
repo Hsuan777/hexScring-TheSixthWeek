@@ -24,9 +24,8 @@
     height: 400px;
   }
   &__product {
-    
     .product {
-      &__item{
+      &__item {
         height: 360px;
         @include media-breakpoint-up(md) {
           height: 442px;
@@ -42,7 +41,7 @@
       }
       &__waterfallItem {
         height: 161px;
-        @include  media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
           &--style1 {
             height: 240px;
           }
@@ -52,7 +51,7 @@
           &--style3 {
             height: 480px;
           }
-        } 
+        }
       }
       &__img {
         position: relative;
@@ -127,8 +126,8 @@
       }
     }
     .pagination {
-      .active{
-        .page-link{
+      .active {
+        .page-link {
           text-decoration: underline;
         }
       }
@@ -186,5 +185,33 @@
     &::placeholder {
       color: map-get($theme-colors, third);
     }
+  }
+}
+
+// .collapse {
+//   transform: translateX(-100%);
+
+//   &.collapsing {
+//     height: 100%;
+//     transition: width 0.35s ease;
+//   }
+//   &.show {
+//     transition: all 0.35s;
+//     transform: translateX(0%);
+//   }
+// }
+.custom__collapse {
+  position: absolute;
+  transform: translateX(-100%);
+  transition: all 0.35s;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  
+  &.show {
+    transform: translateX(0%);
   }
 }
