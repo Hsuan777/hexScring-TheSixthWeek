@@ -9,10 +9,18 @@ current: product
 
     <div class="container-fulid d-lg-none">
       <div class="product__img product__img__1 product__img--mark product__item rounded"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class=" product__item container mt-lg-0 mt-n4" style="position: relative;">
       <div class="row align-items-lg-center align-items-start   h-100 ">
+        <!-- TODO:高度有問題，須修正 -->
         <div class="col-xl-8 col-lg-7 d-none d-lg-block" style="position: absolute; top:0;">
 
           <div class="product__img product__img__1 product__img--markLeft product__item  rounded"></div>
@@ -34,12 +42,18 @@ current: product
 
               <div class="d-flex justify-content-between justify-content-md-end">
                 <!-- 數量 -->
-                <nav aria-label="Page navigation  " class="d-md-none">
-                  <ul class="pagination pagination-lg  mr-1 ">
-                    <li class="page-item"><a class="page-link border-0 bg-light " href="#">-</a></li>
-                    <li class="page-item"><a class="page-link border-0 bg-light" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link border-0 bg-light" href="#">+</a></li>
-                  </ul>
+                <nav aria-label="number navigation" class="d-md-block d-none">
+                  <div class="pagination pagination-lg  mr-1">
+                    <a class="page-item page-link border-0 bg-light " href="#">
+                      <span class="material-icons"> remove </span>
+                    </a>
+                    <a class="page-item page-link border-0 bg-light ">
+                      1
+                    </a>
+                    <a class="page-item page-link border-0 bg-light " href="#">
+                      <span class="material-icons"> add </span>
+                    </a>
+                  </div>
                 </nav>
                 <!-- 價格 -->
                 <div class="text-right">
@@ -57,7 +71,7 @@ current: product
                   <a class="page-item page-link border-0 bg-light " href="#">
                     <span class="material-icons"> remove </span>
                   </a>
-                  <a class="page-item page-link border-0 bg-light " >
+                  <a class="page-item page-link border-0 bg-light ">
                     1
                   </a>
                   <a class="page-item page-link border-0 bg-light " href="#">
@@ -79,11 +93,12 @@ current: product
     <div class="modal right modal fade" id="shopcar" tabindex="-1" role="dialog" aria-labelledby="userInfo"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content p-md-5 p-2" >
+        <div class="modal-content p-md-5 p-2">
 
           <!-- 購物 title -->
           <div class="d-flex justify-content-between align-items-center">
-            <h2 class="h1 mb-0 font-weight-bold d-md-block d-none"> <span>Cart List <sup class="text-primary">3</sup></span> </h2>
+            <h2 class="h1 mb-0 font-weight-bold d-md-block d-none"> <span>Cart List <sup
+                  class="text-primary">3</sup></span> </h2>
             <h2 class="mb-0 font-weight-bold d-md-none"> <span>Cart List <sup class="text-primary">3</sup></span> </h2>
             <button type="button" class="btn  pr-0" data-dismiss="modal" aria-label="Close">
               <span class="material-icons h1 d-md-block d-none"> close </span>
@@ -104,9 +119,9 @@ current: product
                 </div>
                 <button type="button" class="btn py-0 pr-0 m-0">
                   <span class="material-icons "> close </span>
-                </a>
+                  </a>
               </div>
-              
+
               <!-- 數量與最後價格 -->
               <div class="d-flex justify-content-between align-items-center">
                 <nav aria-label="number navigation">
@@ -114,7 +129,7 @@ current: product
                     <a class="page-item page-link border-0 bg-light " href="#">
                       <span class="material-icons "> remove </span>
                     </a>
-                    <a class="page-item page-link border-0 bg-light " >
+                    <a class="page-item page-link border-0 bg-light ">
                       1
                     </a>
                     <a class="page-item page-link border-0 bg-light  " href="#">
@@ -138,17 +153,17 @@ current: product
                 </div>
                 <button type="button" class="btn py-0 pr-0 m-0">
                   <span class="material-icons "> close </span>
-                </a>
+                  </a>
               </div>
-              
+
               <!-- 數量與最後價格 -->
               <div class="d-flex justify-content-between align-items-center">
-                <nav aria-label="number navigation" >
+                <nav aria-label="number navigation">
                   <div class="pagination pagination-sm mr-1">
                     <a class="page-item page-link border-0 bg-light " href="#">
                       <span class="material-icons"> remove </span>
                     </a>
-                    <a class="page-item page-link border-0 bg-light " >
+                    <a class="page-item page-link border-0 bg-light ">
                       2
                     </a>
                     <a class="page-item page-link border-0 bg-light  " href="#">
@@ -160,7 +175,7 @@ current: product
               </div>
             </div>
           </div>
-          
+
 
 
           <div class="media">
@@ -180,10 +195,10 @@ current: product
               </div>
               <a href="" class="btn btn-primary btn-lg d-block">Checkout</a>
             </div>
-            </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
 
   </section>
