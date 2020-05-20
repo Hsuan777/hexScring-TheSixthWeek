@@ -59,7 +59,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
+        top: 0;
+        bottom: 0;
         &--mark {
           &::before {
             position: absolute;
