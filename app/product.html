@@ -53,11 +53,17 @@ current: product
 
               <!-- 數量 -->
               <nav aria-label="number navigation" class="d-md-block d-none">
-                <ul class="pagination pagination-lg  mr-1">
-                  <li class="page-item"><a class="page-link border-0 bg-light " href="#">-</a></li>
-                  <li class="page-item"><a class="page-link border-0 bg-light" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link border-0 bg-light" href="#">+</a></li>
-                </ul>
+                <div class="pagination pagination-lg  mr-1">
+                  <a class="page-item page-link border-0 bg-light " href="#">
+                    <span class="material-icons"> remove </span>
+                  </a>
+                  <a class="page-item page-link border-0 bg-light " >
+                    1
+                  </a>
+                  <a class="page-item page-link border-0 bg-light " href="#">
+                    <span class="material-icons"> add </span>
+                  </a>
+                </div>
               </nav>
 
               <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcar">Add to
@@ -70,46 +76,121 @@ current: product
 
 
     <!-- 購物車 modal -->
-    <div class="modal.right modal fade" id="shopcar" tabindex="-1" role="dialog" aria-labelledby="userInfo"
+    <div class="modal right modal fade" id="shopcar" tabindex="-1" role="dialog" aria-labelledby="userInfo"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content p-5">
+        <div class="modal-content p-md-5 p-2" >
 
-          <!-- 購物清單 -->
-          <div class="d-flex justify-content-between">
-            <h2 class="h1 mb-0 font-weight-bold"> <span>Cart List <sup class="text-primary">3</sup></span> </h2>
+          <!-- 購物 title -->
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="h1 mb-0 font-weight-bold d-md-block d-none"> <span>Cart List <sup class="text-primary">3</sup></span> </h2>
+            <h2 class="mb-0 font-weight-bold d-md-none"> <span>Cart List <sup class="text-primary">3</sup></span> </h2>
             <button type="button" class="btn  pr-0" data-dismiss="modal" aria-label="Close">
-              <span class="material-icons h1"> close </span>
+              <span class="material-icons h1 d-md-block d-none"> close </span>
+              <span class="material-icons h2 d-md-none"> close </span>
             </button>
           </div>
 
+
+
+
           <!-- 購物車商品 -->
-          <div class=" media pr-2 bg-light">
+          <!-- TODO:位置有異 ，數量 icon不夠大-->
+          <div class=" media bg-light mb-1">
+            <!-- 商品圖 -->
             <div class="product__shopcarItem  product__img product__img__1  "></div>
-            <div class="media-body p-1">
-
-              <div class="d-flex justify-content-between align-items-center">
-                <p class="font-weight-bold mb-0">Tatami Cup</p>
-                <button type="button" class="btn pb-0 pr-0">
+            <!-- 商品名稱與原始價格 -->
+            <div class="media-body pt-md-2 pl-md-2 pr-md-2 pt-1 pl-1 pr-1">
+              <div class="d-flex justify-content-between align-items-start mb-md-1 mb-0">
+                <div>
+                  <p class="font-weight-bold mb-0">Tatami Cup</p>
+                  <p class="text-secondary mb-0">NT$1,080<del class="ml-1 text-black-50 h6">NT$1,200</del></p>
+                </div>
+                <button type="button" class="btn py-0 pr-0 m-0">
                   <span class="material-icons "> close </span>
-                </button>
+                </a>
               </div>
-              <!-- 原始價格 -->
-              <p class="text-secondary mb-2">NT$1,080<del class="ml-1 text-black-50 h6">NT$1,200</del></p>
-
-              <!-- 數量與價格 -->
+              
+              <!-- 數量與最後價格 -->
               <div class="d-flex justify-content-between align-items-center">
-                <nav aria-label="number navigation" class="d-md-block d-none">
-                  <ul class="pagination pagination-sm ">
-                    <li class="page-item"><a class="page-link border-0 bg-light " href="#">-</a></li>
-                    <li class="page-item"><a class="page-link border-0 bg-light" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link border-0 bg-light" href="#">+</a></li>
-                  </ul>
+                <nav aria-label="number navigation">
+                  <div class="pagination pagination-sm mr-1">
+                    <a class="page-item page-link border-0 bg-light " href="#">
+                      <span class="material-icons "> remove </span>
+                    </a>
+                    <a class="page-item page-link border-0 bg-light " >
+                      1
+                    </a>
+                    <a class="page-item page-link border-0 bg-light  " href="#">
+                      <span class="material-icons"> add </span>
+                    </a>
+                  </div>
                 </nav>
                 <p class="font-weight-bold mb-0 ">NT$1,080</p>
               </div>
             </div>
           </div>
+          <div class=" media bg-light mb-3">
+            <!-- 商品圖 -->
+            <div class="product__shopcarItem  product__img product__img__1  "></div>
+            <!-- 商品名稱與原始價格 -->
+            <div class="media-body pt-md-2 pl-md-2 pr-md-2 pt-1 pl-1 pr-1">
+              <div class="d-flex justify-content-between align-items-start mb-md-1 mb-0">
+                <div>
+                  <p class="font-weight-bold mb-0">Baifan Bowl</p>
+                  <p class="text-secondary mb-0">NT$1,80</p>
+                </div>
+                <button type="button" class="btn py-0 pr-0 m-0">
+                  <span class="material-icons "> close </span>
+                </a>
+              </div>
+              
+              <!-- 數量與最後價格 -->
+              <div class="d-flex justify-content-between align-items-center">
+                <nav aria-label="number navigation" >
+                  <div class="pagination pagination-sm mr-1">
+                    <a class="page-item page-link border-0 bg-light " href="#">
+                      <span class="material-icons"> remove </span>
+                    </a>
+                    <a class="page-item page-link border-0 bg-light " >
+                      2
+                    </a>
+                    <a class="page-item page-link border-0 bg-light  " href="#">
+                      <span class="material-icons"> add </span>
+                    </a>
+                  </div>
+                </nav>
+                <p class="font-weight-bold mb-0 ">NT$3,600</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div class="media">
+            <div class="product__shopcarItem  d-md-block d-none"></div>
+            <div class="media-body">
+              <div class="d-flex justify-content-between text-secondary">
+                <p>Subtotal</p>
+                <p>NT$4,680</p>
+              </div>
+              <div class="d-flex justify-content-between mb-3 text-secondary">
+                <p class="mb-0">Shipping</p>
+                <p class="mb-0">NT$80</p>
+              </div>
+              <div class="d-flex justify-content-between mb-3 mb-2  ">
+                <h3 class="font-weight-bold">Total</h3>
+                <h3 class="font-weight-bold">NT$4,760</h3>
+              </div>
+              <a href="" class="btn btn-primary btn-lg d-block">Checkout</a>
+            </div>
+            </div>
+          </div>
+
+        
+
+
+
         </div>
       </div>
     </div>

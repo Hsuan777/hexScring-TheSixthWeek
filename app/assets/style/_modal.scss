@@ -1,8 +1,14 @@
 .modal.right .modal-dialog{
+
+  /* fixed會從左邊開始 */
   position: fixed;
+  /* 從右邊開始 */
   right: 0;
   margin: auto;
-  width: 540px;
+  width: 360px;
+  @include media-breakpoint-up(md) {
+    width: 540px;
+  }
   height: 100%;
   // 從右到左出現
   transition:translate3d(0%,0,0);
@@ -23,4 +29,9 @@
 }
 .modal-footer{
   border-top: 0;
+}
+.btn{
+  &:focus{
+    border:0;
+  }
 }

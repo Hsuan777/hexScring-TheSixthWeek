@@ -32,8 +32,12 @@
         }
       }
       &__shopcarItem{
-        width: 112px;
-        height: 112px;
+        width: 96px;
+        height: 96px;
+        @include media-breakpoint-up(md) {
+          width: 112px;
+          height: 112px;
+        }
       }
       &__carouselItem {
         width: 240px;
@@ -160,11 +164,11 @@
         position: absolute;
         font-size: 10px;
         top: 7px;
-        right: -12px;
+        right: -14px;
         @include media-breakpoint-up(md) {
           font-size: 12px;
           top: 10px;
-          right: -14px;
+          right: -15px;
         }
         &.digits {
           right: -7px;
@@ -215,5 +219,8 @@
     &.show {
       transform: translateX(0%);
     }
+  }
+  &__numberBtn{
+    height: 24px;
   }
 }
