@@ -19,10 +19,11 @@ $(document).ready(() => {
   }
   // 箭頭方向改變，提醒有折疊內容
   $(".js-btn ").click(function () {
-    if($(this).find(".js-more").text()!="expand_less"){
-      $(".js-more").text("expand_less");
+    $(this).find(".js-btn__info").toggle();
+    if($(this).find(".js-btn___more").text()!="expand_less"){
+      $(this).find(".js-btn___more").text("expand_less");
     }else{
-      $(".js-more").text("expand_more");
+      $(this).find(".js-btn___more").text("expand_more");
     }
   });
 });

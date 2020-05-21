@@ -241,3 +241,9 @@
     }
   }
 }
+
+@include media-breakpoint-down(md){
+  .text-white--md{
+    color: white;
+  }
+}
