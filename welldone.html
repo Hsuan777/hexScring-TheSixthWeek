@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="HTML，CSS，RWD，前端，線上課程，網頁設計">
+
+  <!-- BootStrap CDN -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+  <!-- Raleway Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet">
+
+  <!-- Lato Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Google icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="icon" href="assets/images/ANSWER.jpg" type="image/x-icon">
+  <title>Well Done</title>
+  <link rel="stylesheet" href="assets/style/all.css">
+</head>
+
+<body >
+
+  <!-- TODO:背景透明，會導致在某些區域不明顯 -->
+  <nav class="js__nav navbar navbar-expand-md  navbar-light bg-transparent ">
+    <div class="container">
+      <!-- 收合開關 -->
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons "> dehaze </span>
+      </button>
+
+      <!-- LOGO， .navbar-light會影響 .navbar-brand、navbar-nav-->
+      <div class="navbar-nav">
+        <a href="index.html" class="nav-item nav-link pl-0">
+          <h1 class="text__Raleway h2  d-md-none "> Craftsman</h1>
+          <h1 class="text__Raleway h2 text-dark d-md-block d-none"> Craftsman</h1>
+        </a>
+
+      </div>
+
+      <!-- 導覽列，md以上顯示 -->
+      <div class="d-md-block d-none ml-md-auto ">
+        <div class="navbar-nav  align-items-center font-weight-bold">
+          <a class="nav-item nav-link rounded mr-5 custom__text" href="productList.html">Product </a>
+          <a class="nav-item nav-link rounded mr-5 " href="#">Blog</a>
+          <a class="nav-item nav-link rounded mr-5" href="#">Contact</a>
+          <a class="nav-item nav-link rounded d-none d-md-block" href="#">
+            <span class="material-icons"> shopping_cart </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 購物車 icon，md以上隱藏 -->
+      <div class="navbar-nav">
+        <a class="nav-item nav-link d-md-none " href="#"><span class="material-icons"> shopping_cart </span></a>
+      </div>
+
+      
+
+    </div>
+
+
+    <!-- 導覽列收合內容 -->
+    <div class=" custom__collapse collapse navbar-collapse " id="navbarNavAltMarkup">
+      <div class="navbar-nav font-weight-bold bg-white p-2 h-100">
+        <!-- 收合開關與購物車 icon -->
+        <div class="d-flex justify-content-between align-items-center pt-1">
+          <button class="btn btn-link pl-0 " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-icons"> arrow_back </span>
+          </button>
+
+          <a class="btn btn-link text-dark pr-0" href="#">
+            <span class="material-icons"> shopping_cart </span>
+          </a>
+        </div>
+
+        <!-- 導覽列 -->
+        <div class="d-flex justify-content-between border-bottom border-black-50">
+          <a class="nav-item nav-link  py-2 text-dark h3 mb-0" href="productList.html">Product
+          </a>
+          <button class="js-btn btn btn-link  pr-0" type="button" data-toggle="collapse" data-target="#productList__view"
+            aria-expanded="false" aria-controls="userInfo__view">
+            <span class=" js-btn___more material-icons text-dark "> expand_more </span>
+          </button>
+        </div>
+        <div id="productList__view" class="collapse  border-bottom border-black-50">
+          <nav class="nav__productList navbar  bg-white">
+            <div class="navbar-nav  font-weight-bold">
+              <a class="nav-item nav-link rounded  text-secondary" href="#">
+                <span class="nav-link__text">All <sup>24</sup></span>  
+              </a>
+              <a class="nav-item nav-link rounded  text-secondary" href="#">
+                <span class="nav-link__text">Bowl <sup>10</sup></span> 
+              </a>
+              <a class="nav-item nav-link rounded  text-secondary" href="#">
+                <span class="nav-link__text">Cup <sup class="digits">8</sup></span>  
+              </a>
+              <a class="nav-item nav-link rounded  text-secondary" href="#">
+                <span class="nav-link__text">Plate <sup class="digits">3</sup></span> 
+              </a>
+              <a class="nav-item nav-link rounded  text-secondary" href="#">
+                <span class="nav-link__text">Vase <sup class="digits">3</sup></span> 
+              </a>
+            </div>
+          </nav>
+        </div>
+
+        <a class="nav-item nav-link  py-2 border-bottom border-black-50 text-dark h3 mb-0" href="#">Blog</a>
+        <a class="nav-item nav-link  py-2 border-bottom border-black-50 text-dark h3 mb-5" href="#">Contact</a>
+      </div>
+    </div>
+
+  </nav>
+
+
+  
+<main>
+
+  <section class="section__banner d-flex align-items-md-center align-items-center mb-md-6 mb-5">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-md-6 col-12 " style="z-index: 99;">
+              <div class="d-md-block d-none">
+                <h3 class="h1 mb-3 font-weight-bold">Well Done!</h3>
+                <p class="h3 mb-5">Your order has been received. We’II email you an order confirmation with details.</p>
+                <a href="productList.html" class="btn btn-primary btn-lg mt-5    font-weight-bold">Continue shopping</a>
+              </div>
+              <div class="d-md-none text-white">
+                <h3 class="h1 mb-3 text-center font-weight-bold">Well Done!</h3>
+                <p class="mb-5 text-third text-center">Your order has been received. We’II email you an order confirmation with details.</p>
+                <a href="productList.html" class="btn btn-primary btn-lg mt-5  mb-3 font-weight-bold d-block">Continue shopping</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__banner__img section__banner__img__welldone col-md-6 col-12  "> </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</main>
+
+
+  <footer class="footer">
+    <section class="section__subscribe d-flex align-items-center">
+      <div class="container ">
+        <div class="row">
+          <div class="col-xl-5 col-12">
+            <form action="" class="d-flex flex-column justify-content-center mb-3">
+              <label for="customEmail" class="h1 text-white d-none d-md-block  font-weight-bold mb-md-5 mb-3">Subscribe
+                for news <br>
+                and special offers!</label>
+              <label for="customEmail" class="h2 text-white d-md-none font-weight-bold mb-md-5 mb-3">Subscribe for news
+                <br>
+                and special offers!</label>
+              <div class="input-group  input-group-lg ">
+                <input type="email" id="customEmail" class="form-control bg-transparent border-third "
+                  placeholder="Your email address" aria-label="Your email address">
+                <div class="input-group-append">
+                  <input type="submit" value="Subscribe" class="btn btn-primary">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <div class="d-none d-md-block">
+          <div class="d-flex align-items-center ">
+            <a class="navbar-brand text__Raleway h2  mr-2 mb-5 mb-md-0  mt-3 mt-md-0 w-md-100"
+              href="index.html">Craftsman</a>
+            <span class="text-white-50 h6 d-none d-md-block mb-0">© 2020. All Rights Reserved.</span>
+          </div>
+        </div>
+
+        <div class="navbar-nav">
+          <div class="d-md-none ">
+            <div class="d-flex align-items-center ">
+              <a class="navbar-brand text__Raleway h2  mr-2 mb-5 mb-md-0  mt-3 mt-md-0 w-md-100"
+                href="index.html">Craftsman</a>
+              <span class="text-white-50 h6 d-none d-md-block mb-0">© 2020. All Rights Reserved.</span>
+            </div>
+          </div>
+          <a class="nav-item nav-link h6 mr-5  " href="#">Purchase Policy </a>
+          <a class="nav-item nav-link h6 mr-5" href="#">Privacy Policy</a>
+          <a class="nav-item nav-link h6 mb-5 mb-md-0" href="#">Terms & Conditions</a>
+          <p class="text-white-50 h6 d-md-none">© 2020. All Rights Reserved.</p>
+        </div>
+      </div>
+    </nav>
+
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+  <script src="assets/js/all.js"></script>
+  <!-- <script src="assets/js/vendors.js"></script> -->
+</body>
+
+</html>
