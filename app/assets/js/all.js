@@ -10,5 +10,8 @@ $(document).ready(() => {
     case "ProductList":
       $('a[href="productList.html"]').addClass('active').removeClass('custom__text');
       break;
+    case "Product":
+      $('a[href="productList.html"]').addClass('active').removeClass('custom__text');
+      break;
   }
 });

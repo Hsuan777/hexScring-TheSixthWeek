@@ -4,59 +4,127 @@ layout: ./app/layout.ejs
 engine: ejs
 current: information
 ---
-
-<div class="container mb-5">
+<div class="container ">
   <div class="row">
-    <div class="col-md-6 col-12">
+    <div class="col-12">
+      <button class="btn btn-info w-100 d-lg-none" type="button" data-toggle="collapse" data-target="#orderSummary" aria-expanded="false" aria-controls="collapseExample">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="mb-0">Order Summary</p>
+          <!-- TODO:修飾開關 -->
+          <p class="mb-0">NT$4,760<span></span></p>
+        </div>
+      </button>
+      <div class="collapse" id="orderSummary">
+        <section class="section__product bg-info p-4">
+          <header class="mb-2 pb-2 border-bottom">
+            <div class="media align-items-center mb-2">
+              <div class="product__shopcartItem product__shopcartItem--sm  mr-2">
+                <div class="product__img product__img__1"></div>
+              </div>
+              <div class="media-body d-flex justify-content-between">
+                <p class="mb-0 font-weight-bold">Tatami Cup × 1</p> <span>NT$1,080</span>
+              </div>
+            </div>
+            <div class="media align-items-center">
+              <div class="product__shopcartItem product__shopcartItem--sm  mr-2">
+                <div class="product__img product__img__4"></div>
+              </div>
+              <div class="media-body d-flex justify-content-between">
+                <p class="mb-0 font-weight-bold">Baifan Bowl × 2</p> <span>NT$3,600</span>
+              </div>
+            </div>
+          </header>
+          <main class="mb-2 pb-2 border-bottom">
+            <div class="d-flex justify-content-between mb-2">
+              <p class="mb-0 font-weight-bold">Subtotal</p> <span>NT$4,680</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="mb-0 font-weight-bold">Shipping</p> <span>NT$80</span>
+            </div>
+          </main>
+          <footer>
+            <div class="d-flex justify-content-between">
+              <h3 class="mb-0 font-weight-bold">Total</h3> 
+              <h3 class="mb-0 font-weight-bold">NT$4,760</h3>
+            </div>
+            
+          </footer>
+        </section>
+      </div>
+
+      <!-- TODO:修改 breadcrumb的 active的變數 -->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-white pl-0">
           <li class="breadcrumb-item "><a href="product.html" class="text-primary">Cart</a></li>
-          <li class="breadcrumb-item "><a >Information</a></li>
-          <li class="breadcrumb-item text-black-50" >Payment</li>
+          <li class="breadcrumb-item breadcrumb-item--style2 font-weight-bold "><a >Information</a></li>
+          <li class="breadcrumb-item breadcrumb-item--style2 text-black-50" >Payment</li>
         </ol>
       </nav>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="row ">
+    <div class="col-lg-6 col-12">
+      
       <form action="">
-        <div class="form-group mb-0">
-          <label for="email">Contact information</label>
-          <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
+        <div class="form-group mb-1">
+          <!-- Contact information -->
+          <label for="email" class="h4 ">Contact information</label>
+          <div class="input-group input-group-lg">
+            <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
+          </div>
         </div>
         
-        <div class="form-group form-check">
+        <div class="form-group form-check mb-4">
           <input type="checkbox" class="form-check-input" id="checkbox">
-          <label class="form-check-label" for="checkbox">Keep me up to date on news and special offers</label>
+          <label class="form-check-label h6 mb-0" for="checkbox">Keep me up to date on news and special offers</label>
         </div>
 
-        <label for="">Shipping address</label>
+        <!-- Shipping address -->
+        <label for="" class="h4 ">Shipping address</label>
         <div class="form-row ">
-          <div class="col-md-6 col-12 mb-1">
-            <input type="text" class="form-control " placeholder="Name">
+          <div class="col-lg-6 col-12 mb-1 ">
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control  " placeholder="Name">
+            </div>
           </div>
-          <div class="col-md-6 col-12 mb-1">
-            <input type="tel" class="form-control" placeholder="Phone">
+          <div class="col-lg-6 col-12 mb-1">
+            <div class="input-group input-group-lg">
+              <input type="tel" class="form-control" placeholder="Phone">
+            </div>
           </div>
           <!-- TODO: select內建樣式與 input文字間距不一樣 -->
-          <div class="col-md-6 col-12  mb-1">
-            <select name="" id="" class="form-control">
-              <option value="" selected>Country/Region</option>
-            </select>
+          <div class="col-lg-6 col-12  mb-1">
+            <div class="input-group input-group-lg">
+              <select name="" id="" class="form-control">
+                <option value="" selected>Country/Region</option>
+              </select>
+
+            </div>
           </div>
-          <div class="col-md-6 col-12  mb-1">
-            <select name="" id="" class="form-control ">
-              <option value="" selected >City</option>
-            </select>
+          <div class="col-lg-6 col-12  mb-1">
+            <div class="input-group input-group-lg">
+              <select name="" id="" class="form-control ">
+                <option value="" selected >City</option>
+              </select>
+            </div>
           </div>
           <div class="col-12 mb-4">
-            <input type="text" class="form-control" placeholder="Address">
+            <div class="input-group input-group-lg">
+              <input type="text" class="form-control" placeholder="Address">
+            </div>
           </div>
 
           
           <div class="col-12 pb-4 border-bottom mb-1">
-            <div class="form-row flex-md-row-reverse  align-items-center">
-              <div class="col-md-6 col-12 mb-md-0 mb-3">
+            <div class="form-row flex-lg-row-reverse  align-items-center">
+              <div class="col-lg-6 col-12 mb-lg-0 mb-3">
                 <!-- TODO:試試改成 modal -->
                 <button type="button" class="btn btn-primary btn-lg  w-100">Continue to payment</button>
               </div>
-              <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
+              <div class="col-lg-6 col-12 d-flex justify-content-lg-start justify-content-center">
                 <a href="product.html" class="text-primary text-decoration-none d-flex align-items-center">
                   <span class="material-icons"> keyboard_arrow_left </span>
                   Return to cart
@@ -74,6 +142,43 @@ current: information
         
       </form>
     </div>
-    <div class="col-4"></div>
+    <div class="col-4 d-lg-block d-none">
+      <section class="section__product bg-info p-4">
+        <header class="mb-2 pb-2 border-bottom">
+          <div class="media align-items-center mb-2">
+            <div class="product__shopcartItem product__shopcartItem--sm  mr-2">
+              <div class="product__img product__img__1"></div>
+            </div>
+            <div class="media-body d-flex justify-content-between">
+              <p class="mb-0 font-weight-bold">Tatami Cup × 1</p> <span>NT$1,080</span>
+            </div>
+          </div>
+          <div class="media align-items-center">
+            <div class="product__shopcartItem product__shopcartItem--sm  mr-2">
+              <div class="product__img product__img__4"></div>
+            </div>
+            <div class="media-body d-flex justify-content-between">
+              <p class="mb-0 font-weight-bold">Baifan Bowl × 2</p> <span>NT$3,600</span>
+            </div>
+          </div>
+        </header>
+        <main class="mb-2 pb-2 border-bottom">
+          <div class="d-flex justify-content-between mb-2">
+            <p class="mb-0 font-weight-bold">Subtotal</p> <span>NT$4,680</span>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="mb-0 font-weight-bold">Shipping</p> <span>NT$80</span>
+          </div>
+        </main>
+        <footer>
+          <div class="d-flex justify-content-between">
+            <h3 class="mb-0 font-weight-bold">Total</h3> 
+            <h3 class="mb-0 font-weight-bold">NT$4,760</h3>
+          </div>
+          
+        </footer>
+      </section>
+      
+    </div>
   </div>
 </div>

@@ -40,6 +40,10 @@
           width: 112px;
           height: 112px;
         }
+        &--sm{
+          width: 48px;
+          height: 48px;
+        }
       }
       &__carouselItem {
         position: relative;
@@ -229,4 +233,11 @@
     }
   }
   
+}
+.breadcrumb-item + .breadcrumb-item {
+  &--style2{
+    &::before{
+      content: '>';
+    }
+  }
 }
