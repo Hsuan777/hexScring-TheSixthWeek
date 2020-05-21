@@ -7,11 +7,12 @@ current: information
 <div class="container ">
   <div class="row">
     <div class="col-12">
-      <button class="btn btn-info w-100 d-lg-none" type="button" data-toggle="collapse" data-target="#orderSummary" aria-expanded="false" aria-controls="collapseExample">
+      <button class="js-btn btn btn-info w-100 d-lg-none" type="button" data-toggle="collapse" data-target="#orderSummary" aria-expanded="false" aria-controls="collapseExample">
         <div class="d-flex justify-content-between align-items-center">
           <p class="mb-0">Order Summary</p>
-          <!-- TODO:修飾開關 -->
-          <p class="mb-0">NT$4,760<span></span></p>
+          <p class="mb-0 d-flex align-items-center">NT$4,760
+            <span class="material-icons text-primary js-more "> expand_more </span>
+          </p>
         </div>
       </button>
       <div class="collapse" id="orderSummary">
@@ -57,7 +58,7 @@ current: information
         <ol class="breadcrumb bg-white pl-0">
           <li class="breadcrumb-item "><a href="product.html" class="text-primary">Cart</a></li>
           <li class="breadcrumb-item breadcrumb-item--style2 font-weight-bold "><a >Information</a></li>
-          <li class="breadcrumb-item breadcrumb-item--style2 text-black-50" >Payment</li>
+          <li class="breadcrumb-item breadcrumb-item--style2 text-black-50 " >Payment</li>
         </ol>
       </nav>
     </div>
@@ -78,6 +79,7 @@ current: information
         </div>
         
         <div class="form-group form-check mb-4">
+          <!-- TODO:修改 checkbox樣式 -->
           <input type="checkbox" class="form-check-input" id="checkbox">
           <label class="form-check-label h6 mb-0" for="checkbox">Keep me up to date on news and special offers</label>
         </div>
@@ -85,18 +87,18 @@ current: information
         <!-- Shipping address -->
         <label for="" class="h4 ">Shipping address</label>
         <div class="form-row ">
-          <div class="col-lg-6 col-12 mb-1 ">
+          <div class="col-md-6 col-12 mb-1 ">
             <div class="input-group input-group-lg">
               <input type="text" class="form-control  " placeholder="Name">
             </div>
           </div>
-          <div class="col-lg-6 col-12 mb-1">
+          <div class="col-md-6 col-12 mb-1">
             <div class="input-group input-group-lg">
               <input type="tel" class="form-control" placeholder="Phone">
             </div>
           </div>
           <!-- TODO: select內建樣式與 input文字間距不一樣 -->
-          <div class="col-lg-6 col-12  mb-1">
+          <div class="col-md-6 col-12  mb-1">
             <div class="input-group input-group-lg">
               <select name="" id="" class="form-control">
                 <option value="" selected>Country/Region</option>
@@ -104,7 +106,7 @@ current: information
 
             </div>
           </div>
-          <div class="col-lg-6 col-12  mb-1">
+          <div class="col-md-6 col-12  mb-1">
             <div class="input-group input-group-lg">
               <select name="" id="" class="form-control ">
                 <option value="" selected >City</option>
@@ -119,12 +121,12 @@ current: information
 
           
           <div class="col-12 pb-4 border-bottom mb-1">
-            <div class="form-row flex-lg-row-reverse  align-items-center">
-              <div class="col-lg-6 col-12 mb-lg-0 mb-3">
+            <div class="form-row flex-md-row-reverse  align-items-center">
+              <div class="col-md-6 col-12 mb-md-0 mb-3">
                 <!-- TODO:試試改成 modal -->
                 <button type="button" class="btn btn-primary btn-lg  w-100">Continue to payment</button>
               </div>
-              <div class="col-lg-6 col-12 d-flex justify-content-lg-start justify-content-center">
+              <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center ">
                 <a href="product.html" class="text-primary text-decoration-none d-flex align-items-center">
                   <span class="material-icons"> keyboard_arrow_left </span>
                   Return to cart
