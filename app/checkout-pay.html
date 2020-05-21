@@ -1,21 +1,164 @@
 ---
-title: Information
+title: Payment
 layout: ./app/layout.ejs
 engine: ejs
-current: information
+current: Payment
 ---
-<div class="container ">
-  <div class="row">
-    <div class="col-12 ">
-      <button class="js-btn btn btn-info w-100 d-lg-none py-2 mb-3" type="button" data-toggle="collapse" data-target="#orderSummary" aria-expanded="false" aria-controls="orderSummary">
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="mb-0">Order Summary</p>
-          <p class="mb-0 d-flex align-items-center">NT$4,760
-            <span class="js-btn___more ml-1 material-icons text-primary  "> expand_more </span>
-          </p>
+<main>
+
+  <div class="container ">
+    <div class="row">
+      <div class="col-12 ">
+        <button class="js-btn btn btn-info w-100 d-lg-none py-2 mb-3" type="button" data-toggle="collapse" data-target="#orderSummary" aria-expanded="false" aria-controls="orderSummary">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">Order Summary</p>
+            <p class="mb-0 d-flex align-items-center">NT$4,760
+              <span class="js-btn___more ml-1 material-icons text-primary  "> expand_more </span>
+            </p>
+          </div>
+        </button>
+        <div class="collapse" id="orderSummary">
+          <section class="section__product bg-info p-4">
+            <header class="mb-2 pb-2 border-bottom">
+              <div class="media align-items-center mb-2">
+                <div class="product__shopcartItem product__shopcartItem--sm  mr-2">
+                  <div class="product__img product__img__1"></div>
+                </div>
+                <div class="media-body d-flex justify-content-between">
+                  <p class="mb-0 font-weight-bold">Tatami Cup × 1</p> <span>NT$1,080</span>
+                </div>
+              </div>
+              <div class="media align-items-center">
+                <div class="product__shopcartItem product__shopcartItem--sm  mr-2">
+                  <div class="product__img product__img__4"></div>
+                </div>
+                <div class="media-body d-flex justify-content-between">
+                  <p class="mb-0 font-weight-bold">Baifan Bowl × 2</p> <span>NT$3,600</span>
+                </div>
+              </div>
+            </header>
+            <main class="mb-2 pb-2 border-bottom">
+              <div class="d-flex justify-content-between mb-2">
+                <p class="mb-0 font-weight-bold">Subtotal</p> <span>NT$4,680</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="mb-0 font-weight-bold">Shipping</p> <span>NT$80</span>
+              </div>
+            </main>
+            <footer>
+              <div class="d-flex justify-content-between">
+                <h3 class="mb-0 font-weight-bold">Total</h3> 
+                <h3 class="mb-0 font-weight-bold">NT$4,760</h3>
+              </div>
+              
+            </footer>
+          </section>
         </div>
-      </button>
-      <div class="collapse" id="orderSummary">
+  
+        <nav aria-label="breadcrumb mb-md-4 mb-3">
+          <ol class="breadcrumb bg-white pl-0">
+            <li class="breadcrumb-item "><a href="product.html" class="text-primary">Cart</a></li>
+            <li class="breadcrumb-item breadcrumb-item--style2  "><a >Information</a></li>
+            <li class="breadcrumb-item breadcrumb-item--style2 font-weight-bold " >Payment</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mb-5">
+    <div class="row ">
+      <div class="col-lg-6 col-12">
+        
+        <form action="">
+          <div class="mb-md-4 mb-3">
+            <!-- Information -->
+            <h4 >Information</h4>
+            <div class=" ">
+              <!-- Contact -->
+              <button class="js-btn btn btn-outline-info border btn-lg w-100" type="button" data-toggle="collapse" data-target="#contact" aria-expanded="false" aria-contr ols="contact">
+                <div class="d-flex justify-content-between align-items-center  ">
+                  <p class="mb-0 text-dark text-truncate d-flex justify-content-start  align-items-center"> Contact
+                    <span class="js-btn__info mb-0 h6 text-secondary ml-1">Joanne Lin / Joanne@mail.com / +886 912-345-678  </span>
+                  </p>
+                  <span class="js-btn___more ml-1 material-icons text-primary  "> expand_more </span>
+                </div>
+                <div class="collapse" id="contact">
+                  <h6 class="text-secondary text-left">Joanne Lin<br>Joanne@mail.com <br> +886 912-345-678</h6>
+                </div>
+              </button>
+  
+              <!-- Ship to -->
+              <button class="js-btn btn btn-outline-info border btn-lg w-100" type="button" data-toggle="collapse" data-target="#shipTo" aria-expanded="false" aria-contr ols="contact">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-0 text-dark text-nowrap text-truncate  d-flex justify-content-start align-items-center">Ship to
+                    <span class="js-btn__info mb-0 h6 text-secondary ml-2">3F., No. 2, Ln. 1, Hello 2nd Rd., Woohoo Dist., Kaohsiung City 806, Taiwan  </span>
+                  </p>
+                  <span class="js-btn___more ml-1 material-icons text-primary  "> expand_more </span>
+                </div>
+                <div class="collapse" id="shipTo">
+                  <h6 class="text-secondary text-left">3F., No. 2, Ln. 1, Hello 2nd Rd., <br>Woohoo Dist., Kaohsiung City 806,  <br>Taiwan  </h6>
+                </div>
+              </button>
+              
+            </div>
+          </div>
+          
+          
+  
+          <!-- Credit Card -->
+          <h4>Credit Card</h4>
+          <div class="form-row ">
+            <div class="col-12 mb-1 ">
+              <div class="input-group input-group-lg">
+                <!-- XXXX-XXXX-XXXX-XXXX -->
+                <input type="text" class="form-control  " placeholder="Card number">
+              </div>
+            </div>
+            <div class="col-12 mb-1">
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Name on card">
+              </div>
+            </div>
+           
+            <div class="col-md-6 col-12  mb-1">
+              <div class="input-group input-group-lg">
+                <!-- 日期樣式可以修改 -->
+                <!-- <input type="date" class="form-control"  placeholder="Expiration date (MM / YY)"> -->
+                <input type="text" class="form-control"  placeholder="Expiration date (MM / YY)">
+              </div>
+            </div>
+            <div class="col-md-6 col-12   mb-4">
+              <div class="input-group input-group-lg">
+                <input type="number" class="form-control"  placeholder="Security code">
+              </div>
+            </div>
+            
+            <div class="col-12 pb-4 border-bottom mb-1">
+              <div class="form-row flex-md-row-reverse  align-items-center">
+                <div class="col-md-6 col-12 mb-md-0 mb-3">
+                  
+                  <a href="welldone.html" class="btn btn-primary btn-lg  w-100">Pay now</a>
+                </div>
+                <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center ">
+                  <a href="checkout-info.html" class="text-primary text-decoration-none d-flex align-items-center">
+                    <span class="material-icons"> keyboard_arrow_left </span>
+                    Return to information
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-md-row flex-column">
+              <a href="#" class="mr-3 h6 text-secondary text-decoration-none">Purchase Policy</a>
+              <a href="#" class="mr-3 h6 text-secondary text-decoration-none">Privacy Policy</a>
+              <a href="#" class="h6 text-secondary text-decoration-none">Terms & Conditions</a>
+            </div>
+  
+          </div>
+          
+        </form>
+      </div>
+      <div class="col-4 d-lg-block d-none">
         <section class="section__product bg-info p-4">
           <header class="mb-2 pb-2 border-bottom">
             <div class="media align-items-center mb-2">
@@ -51,148 +194,11 @@ current: information
             
           </footer>
         </section>
+        
       </div>
-
-      <nav aria-label="breadcrumb mb-md-4 mb-3">
-        <ol class="breadcrumb bg-white pl-0">
-          <li class="breadcrumb-item "><a href="product.html" class="text-primary">Cart</a></li>
-          <li class="breadcrumb-item breadcrumb-item--style2  "><a >Information</a></li>
-          <li class="breadcrumb-item breadcrumb-item--style2 font-weight-bold " >Payment</li>
-        </ol>
-      </nav>
     </div>
   </div>
-</div>
 
-<div class="container mb-5">
-  <div class="row ">
-    <div class="col-lg-6 col-12">
-      
-      <form action="">
-        <div class="mb-md-4 mb-3">
-          <!-- Information -->
-          <h4 >Information</h4>
-          <div class=" ">
-            <!-- Contact -->
-            <button class="js-btn btn btn-outline-info border btn-lg w-100" type="button" data-toggle="collapse" data-target="#contact" aria-expanded="false" aria-contr ols="contact">
-              <div class="d-flex justify-content-between align-items-center  ">
-                <p class="mb-0 text-dark text-truncate d-flex justify-content-start  align-items-center"> Contact
-                  <span class="js-btn__info mb-0 h6 text-secondary ml-1">Joanne Lin / Joanne@mail.com / +886 912-345-678  </span>
-                </p>
-                <span class="js-btn___more ml-1 material-icons text-primary  "> expand_more </span>
-              </div>
-              <div class="collapse" id="contact">
-                <h6 class="text-secondary text-left">Joanne Lin<br>Joanne@mail.com <br> +886 912-345-678</h6>
-              </div>
-            </button>
+</main>
 
-            <!-- Ship to -->
-            <button class="js-btn btn btn-outline-info border btn-lg w-100" type="button" data-toggle="collapse" data-target="#shipTo" aria-expanded="false" aria-contr ols="contact">
-              <div class="d-flex justify-content-between align-items-center">
-                <p class="mb-0 text-dark text-nowrap text-truncate  d-flex justify-content-start align-items-center">Ship to
-                  <span class="js-btn__info mb-0 h6 text-secondary ml-2">3F., No. 2, Ln. 1, Hello 2nd Rd., Woohoo Dist., Kaohsiung City 806, Taiwan  </span>
-                </p>
-                <span class="js-btn___more ml-1 material-icons text-primary  "> expand_more </span>
-              </div>
-              <div class="collapse" id="shipTo">
-                <h6 class="text-secondary text-left">3F., No. 2, Ln. 1, Hello 2nd Rd., <br>Woohoo Dist., Kaohsiung City 806,  <br>Taiwan  </h6>
-              </div>
-            </button>
-            
-          </div>
-        </div>
-        
-        
 
-        <!-- Credit Card -->
-        <h4>Credit Card</h4>
-        <div class="form-row ">
-          <div class="col-12 mb-1 ">
-            <div class="input-group input-group-lg">
-              <!-- XXXX-XXXX-XXXX-XXXX -->
-              <input type="text" class="form-control  " placeholder="Card number">
-            </div>
-          </div>
-          <div class="col-12 mb-1">
-            <div class="input-group input-group-lg">
-              <input type="text" class="form-control" placeholder="Name on card">
-            </div>
-          </div>
-         
-          <div class="col-md-6 col-12  mb-1">
-            <div class="input-group input-group-lg">
-              <!-- 日期樣式可以修改 -->
-              <!-- <input type="date" class="form-control"  placeholder="Expiration date (MM / YY)"> -->
-              <input type="text" class="form-control"  placeholder="Expiration date (MM / YY)">
-            </div>
-          </div>
-          <div class="col-md-6 col-12   mb-4">
-            <div class="input-group input-group-lg">
-              <input type="number" class="form-control"  placeholder="Security code">
-            </div>
-          </div>
-          
-          <div class="col-12 pb-4 border-bottom mb-1">
-            <div class="form-row flex-md-row-reverse  align-items-center">
-              <div class="col-md-6 col-12 mb-md-0 mb-3">
-                <!-- TODO:試試改成 modal -->
-                <button type="button" class="btn btn-primary btn-lg  w-100">Pay now</button>
-              </div>
-              <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center ">
-                <a href="checkout-info.html" class="text-primary text-decoration-none d-flex align-items-center">
-                  <span class="material-icons"> keyboard_arrow_left </span>
-                  Return to information
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-md-row flex-column">
-            <a href="#" class="mr-3 h6 text-secondary text-decoration-none">Purchase Policy</a>
-            <a href="#" class="mr-3 h6 text-secondary text-decoration-none">Privacy Policy</a>
-            <a href="#" class="h6 text-secondary text-decoration-none">Terms & Conditions</a>
-          </div>
-
-        </div>
-        
-      </form>
-    </div>
-    <div class="col-4 d-lg-block d-none">
-      <section class="section__product bg-info p-4">
-        <header class="mb-2 pb-2 border-bottom">
-          <div class="media align-items-center mb-2">
-            <div class="product__shopcartItem product__shopcartItem--sm  mr-2">
-              <div class="product__img product__img__1"></div>
-            </div>
-            <div class="media-body d-flex justify-content-between">
-              <p class="mb-0 font-weight-bold">Tatami Cup × 1</p> <span>NT$1,080</span>
-            </div>
-          </div>
-          <div class="media align-items-center">
-            <div class="product__shopcartItem product__shopcartItem--sm  mr-2">
-              <div class="product__img product__img__4"></div>
-            </div>
-            <div class="media-body d-flex justify-content-between">
-              <p class="mb-0 font-weight-bold">Baifan Bowl × 2</p> <span>NT$3,600</span>
-            </div>
-          </div>
-        </header>
-        <main class="mb-2 pb-2 border-bottom">
-          <div class="d-flex justify-content-between mb-2">
-            <p class="mb-0 font-weight-bold">Subtotal</p> <span>NT$4,680</span>
-          </div>
-          <div class="d-flex justify-content-between">
-            <p class="mb-0 font-weight-bold">Shipping</p> <span>NT$80</span>
-          </div>
-        </main>
-        <footer>
-          <div class="d-flex justify-content-between">
-            <h3 class="mb-0 font-weight-bold">Total</h3> 
-            <h3 class="mb-0 font-weight-bold">NT$4,760</h3>
-          </div>
-          
-        </footer>
-      </section>
-      
-    </div>
-  </div>
-</div>

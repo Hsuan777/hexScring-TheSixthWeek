@@ -1,21 +1,27 @@
 .section {
-  &__index {
+  &__banner {
     position: relative;
     height: 640px;
     @include media-breakpoint-up(md) {
       height: 800px;
     }
-    &__banner {
+    &__img {
       position: absolute;
-      background-image: url("../images/index_tom-crew-5HRCkrSs9Dk-unsplash-1280.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       top: 0;
       bottom: 0;
       right: 0;
+      &__index {
+        background-image: url("../images/index_tom-crew-5HRCkrSs9Dk-unsplash-1280.jpg");
+      }
+      &__welldone {
+        background-image: url("../images/wellDone_annie-spratt-TEhfafMgFSM-unsplash.jpg");
+      }
     }
   }
+
   &__artDirector {
     background-image: url("../images/index_burningparrot-u2Xn5Bzvllw-unsplash.jpg");
     background-position: center;
@@ -32,7 +38,7 @@
           height: 442px;
         }
       }
-      &__shopcartItem{
+      &__shopcartItem {
         position: relative;
         width: 96px;
         height: 96px;
@@ -40,7 +46,7 @@
           width: 112px;
           height: 112px;
         }
-        &--sm{
+        &--sm {
           width: 48px;
           height: 48px;
         }
@@ -209,12 +215,12 @@
 }
 
 .custom {
-  &__text{
-    @include media-breakpoint-only(md){
-      background: linear-gradient(to right,black,white);
+  &__text {
+    @include media-breakpoint-only(md) {
+      background: linear-gradient(to right, black, white);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-    } 
+    }
   }
   &__collapse {
     // display: block;
@@ -232,18 +238,17 @@
       transform: translateX(0%);
     }
   }
-  
 }
 .breadcrumb-item + .breadcrumb-item {
-  &--style2{
-    &::before{
-      content: '>';
+  &--style2 {
+    &::before {
+      content: ">";
     }
   }
 }
 
-@include media-breakpoint-down(md){
-  .text-white--md{
+@include media-breakpoint-down(md) {
+  .text-white--md {
     color: white;
   }
 }
