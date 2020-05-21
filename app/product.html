@@ -7,28 +7,27 @@ current: product
 <main>
   <section class="section__product mb-lg-5 mb-3">
 
-    <div class="container-fulid d-lg-none">
-      <div class="product__img product__img__1 product__img--mark product__item rounded"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
+    <!-- 商品圖片，手機與平板，lg關閉 -->
+    <div class="product__innerBanner d-lg-none">
+      <div class="product__img product__img__1 product__img--mark "> </div>
+    </div>
+    
 
+    <div class="container ">
+      <div class="row align-items-lg-center align-items-start ">
+        <!-- TODO:區塊重疊 -->
+        <!-- 商品圖片，lg顯示 -->
+        <div class="col-xl-8 col-lg-7 d-none d-lg-block " >
+          <div class="product__innerBanner  rounded ">
+            <div class="product__img product__img__1 product__img--markLeft   "></div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class=" product__item container mt-lg-0 mt-n4" style="position: relative;">
-      <div class="row align-items-lg-center align-items-start   h-100 ">
-        <!-- TODO:高度有問題，須修正 -->
-        <div class="col-xl-8 col-lg-7 d-none d-lg-block" style="position: absolute; top:0;">
-
-          <div class="product__img product__img__1 product__img--markLeft product__item  rounded"></div>
-
-        </div>
-        <div class="col-xl-5 col-lg-6 col-12 ml-auto">
+        <!-- 商品內容 -->
+        <div class="col-xl-5 col-lg-6 col-12 mt-n4 mt-lg-0 ml-auto">
+          
           <div class="card border-0 pl-4">
             <div class="card-head ">
+              <!-- 麵包屑 -->
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-white pl-0 pt-0 mb-0 mt-4">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -38,11 +37,11 @@ current: product
               </nav>
             </div>
             <div class="card-body pl-0 py-0 pr-md-0 mb-3">
+              <!-- 商品名稱 -->
               <h2 class="h1 font-weight-bold">Tatami Cup</h2>
-
+              <!-- 數量與價格 - 手機版型 -->
               <div class="d-flex justify-content-between justify-content-md-end">
-                <!-- 數量 -->
-                <nav aria-label="number navigation" class="d-md-block d-none">
+                <nav aria-label="number navigation" class="d-md-none ">
                   <div class="pagination pagination-lg  mr-1">
                     <a class="page-item page-link border-0 bg-light " href="#">
                       <span class="material-icons"> remove </span>
@@ -64,8 +63,7 @@ current: product
 
             </div>
             <div class="card-footer d-flex justify-content-end bg-white border-top-0 pl-0 pr-md-0 pt-0 pb-4">
-
-              <!-- 數量 -->
+              <!-- 數量與價格 - 桌機版型 -->
               <nav aria-label="number navigation" class="d-md-block d-none">
                 <div class="pagination pagination-lg  mr-1">
                   <a class="page-item page-link border-0 bg-light " href="#">
@@ -80,17 +78,19 @@ current: product
                 </div>
               </nav>
 
-              <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcar">Add to
-                cart</button>
+              <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcart">
+                Add to cart
+              </button>
             </div>
           </div>
+
         </div>
       </div>
     </div>
 
 
     <!-- 購物車 modal -->
-    <div class="modal right modal fade" id="shopcar" tabindex="-1" role="dialog" aria-labelledby="userInfo"
+    <div class="modal right modal fade" id="shopcart" tabindex="-1" role="dialog" aria-labelledby="userInfo"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content p-md-5 p-2">
@@ -109,7 +109,9 @@ current: product
           <!-- 購物車商品 -->
           <div class=" media bg-light mb-1">
             <!-- 商品圖 -->
-            <div class="product__shopcarItem  product__img product__img__1  "></div>
+            <div class="product__shopcartItem    ">
+              <div class="product__img product__img__1"></div>
+            </div>
             <!-- 商品名稱與原始價格 -->
             <div class="media-body pt-md-2 pl-md-2 pr-md-2 pt-1 pl-1 pr-1">
               <div class="d-flex justify-content-between align-items-start mb-md-1 mb-0">
@@ -143,7 +145,9 @@ current: product
           </div>
           <div class=" media bg-light mb-3">
             <!-- 商品圖 -->
-            <div class="product__shopcarItem  product__img product__img__1  "></div>
+            <div class="product__shopcartItem ">
+              <div class=" product__img product__img__2  "></div>
+            </div>
             <!-- 商品名稱與原始價格 -->
             <div class="media-body pt-md-2 pl-md-2 pr-md-2 pt-1 pl-1 pr-1">
               <div class="d-flex justify-content-between align-items-start mb-md-1 mb-0">
@@ -179,7 +183,7 @@ current: product
 
 
           <div class="media">
-            <div class="product__shopcarItem  d-md-block d-none"></div>
+            <div class="product__shopcartItem  d-md-block d-none"></div>
             <div class="media-body">
               <div class="d-flex justify-content-between text-secondary">
                 <p>Subtotal</p>

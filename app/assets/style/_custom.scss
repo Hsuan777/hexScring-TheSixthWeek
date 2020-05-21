@@ -25,13 +25,15 @@
   }
   &__product {
     .product {
-      &__item {
+      &__innerBanner {
+        position: relative;
         height: 360px;
         @include media-breakpoint-up(md) {
           height: 442px;
         }
       }
-      &__shopcarItem{
+      &__shopcartItem{
+        position: relative;
         width: 96px;
         height: 96px;
         @include media-breakpoint-up(md) {
@@ -40,6 +42,7 @@
         }
       }
       &__carouselItem {
+        position: relative;
         width: 240px;
         height: 240px;
         @include media-breakpoint-up(md) {
@@ -48,6 +51,7 @@
         }
       }
       &__waterfallItem {
+        position: relative;
         height: 161px;
         @include media-breakpoint-up(lg) {
           &--style1 {
@@ -62,12 +66,16 @@
         }
       }
       &__img {
-        position: relative;
+        /* 原本將圖片做定位 position: relative; */
+        /* 但是圖片無法再次被定位，目前讓圖片所在 item做父層定位 */
+        position: absolute;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        width: 100%;
         top: 0;
         bottom: 0;
+
         &--mark {
           &::before {
             position: absolute;
