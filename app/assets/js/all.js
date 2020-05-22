@@ -26,4 +26,11 @@ $(document).ready(() => {
       $(this).find(".js-btn___more").text("expand_more");
     }
   });
+
+  var swiper = new Swiper('.swiper-container', {
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      hide: true,
+    },
+  });
 });
