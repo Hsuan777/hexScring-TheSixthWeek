@@ -22,15 +22,19 @@
   <!-- Google icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <!-- swiper -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
   <link rel="icon" href="assets/images/ANSWER.jpg" type="image/x-icon">
   <title>Craftsman</title>
   <link rel="stylesheet" href="assets/style/all.css">
 </head>
 
-<body >
+<body>
 
   <!-- TODO:背景透明，會導致在某些區域不明顯 -->
-  <nav class="js__nav navbar navbar-expand-md  navbar-light bg-transparent ">
+  <nav class="js-layout__navbar navbar navbar-expand-md  navbar-light bg-transparent ">
     <div class="container">
       <!-- 收合開關 -->
       <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -50,7 +54,7 @@
       <!-- 導覽列，md以上顯示 -->
       <div class="d-md-block d-none ml-md-auto ">
         <div class="navbar-nav  align-items-center font-weight-bold">
-          <a class="nav-item nav-link rounded mr-5 custom__text" href="productList.html">Product </a>
+          <a class="nav-item nav-link rounded mr-5 " href="productList.html">Product </a>
           <a class="nav-item nav-link rounded mr-5 " href="#">Blog</a>
           <a class="nav-item nav-link rounded mr-5" href="#">Contact</a>
           <a class="nav-item nav-link rounded d-none d-md-block" href="#">
@@ -60,11 +64,11 @@
       </div>
 
       <!-- 購物車 icon，md以上隱藏 -->
-      <div class="navbar-nav">
+      <div class="js-layout__navbar navbar-nav">
         <a class="nav-item nav-link d-md-none " href="#"><span class="material-icons"> shopping_cart </span></a>
       </div>
 
-      
+
 
     </div>
 
@@ -88,8 +92,8 @@
         <div class="d-flex justify-content-between border-bottom border-black-50">
           <a class="nav-item nav-link  py-2 text-dark h3 mb-0" href="productList.html">Product
           </a>
-          <button class="js-btn btn btn-link  pr-0" type="button" data-toggle="collapse" data-target="#productList__view"
-            aria-expanded="false" aria-controls="userInfo__view">
+          <button class="js-btn btn btn-link  pr-0" type="button" data-toggle="collapse"
+            data-target="#productList__view" aria-expanded="false" aria-controls="userInfo__view">
             <span class=" js-btn___more material-icons text-dark "> expand_more </span>
           </button>
         </div>
@@ -97,19 +101,19 @@
           <nav class="nav__productList navbar  bg-white">
             <div class="navbar-nav  font-weight-bold">
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">All <sup>24</sup></span>  
+                <span class="nav-link__text">All <sup>24</sup></span>
               </a>
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">Bowl <sup>10</sup></span> 
+                <span class="nav-link__text">Bowl <sup>10</sup></span>
               </a>
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">Cup <sup class="digits">8</sup></span>  
+                <span class="nav-link__text">Cup <sup class="digits">8</sup></span>
               </a>
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">Plate <sup class="digits">3</sup></span> 
+                <span class="nav-link__text">Plate <sup class="digits">3</sup></span>
               </a>
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">Vase <sup class="digits">3</sup></span> 
+                <span class="nav-link__text">Vase <sup class="digits">3</sup></span>
               </a>
             </div>
           </nav>
@@ -154,12 +158,12 @@
     <div class="container">
       <!-- Special Clays -->
       <div class="row mb-lg-4 mb-3">
-        <div class="col-md-6 col-12 mb-2 mb-md-0">
+        <div class="col-md-6 col-12 mb-2 mb-md-0 transition">
           <img src="assets/images/index_neven-krcmarek-F1oNsAykHa0-unsplash.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md-6  ">
           <div class="row justify-content-center align-items-center h-100 ">
-            <main class="col-md-8 col-12">
+            <main class="col-md-8 col-12 ">
               <h3 class="font-weight-bold mb-2">Special Clays</h3>
               <p class="mb-3">A general body formulation for contemporary earthenware is 25% kaolin, 25% ball clay, 35%
                 quartz and 15% feldspar.</p>
@@ -170,8 +174,8 @@
       </div>
 
       <!-- Less is more -->
-      <div class="row flex-lg-row-reverse mb-lg-4 mb-3">
-        <div class="col-md-6 col-12  mb-2 mb-md-0">
+      <div class="row flex-lg-row-reverse mb-lg-4 mb-3 ">
+        <div class="col-md-6 col-12  mb-2 mb-md-0 transition">
           <img src="assets/images/index_anne-nygard-sHyerRuFqT4-unsplash.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md-6 ">
@@ -188,12 +192,12 @@
 
       <!-- Marvelous Detail -->
       <div class="row mb-lg-6 mb-5">
-        <div class="col-md-6 col-12 mb-2 mb-md-0">
+        <div class="col-md-6 col-12 mb-2 mb-md-0 transition">
           <img src="assets/images/index_tom-crew-GOtE6-VOwH0-unsplash.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md-6  ">
           <div class="row justify-content-center align-items-center h-100 ">
-            <main class="col-md-8 col-12">
+            <main class="col-md-8 col-12 ">
               <h3 class="font-weight-bold mb-2">Marvelous Detail</h3>
               <p class="mb-3">In Craftsman, the art director, working with marketers, develops or creates an idea of a
                 new creation.</p>
@@ -215,7 +219,7 @@
           <p class="text-third mb-0">Art Director</p>
           <h3 class="text-white mb-2">hsiao-Ming Chen</h3>
           <div class="d-flex ">
-            <!-- TODO: hover顯示不清楚 -->
+
             <a href="" class="mr-3 font-weight-bold text-decoration-none text-primary">Instagram</a>
             <a href="" class="font-weight-bold text-decoration-none text-primary">Twitter</a>
           </div>
@@ -227,46 +231,145 @@
   <section class="section__product mb-lg-6 mb-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 ">
-          <!-- TODO:可以使用 swiper -->
-          <!-- 表格方式，但強迫將 X軸隱藏 PC版無法拖曳 -->
-          <div class="table-responsive overflow-hidden">
-            <table class="table table-borderless">
-              <tbody>
-                <tr>
-                  <td>
-                    <div class=" product__carouselItem   mb-1">
-                      <div class="product__img product__img__1 product__img--mark"></div>
-                    </div>
-                    <h3 class="mb-0">Tatami Cup</h3>
-                    <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
-                  </td>
-                  <td>
-                    <div class=" product__carouselItem mb-1">
-                      <div class="product__img product__img__2 "></div>
-                    </div>
-                    <h3 class="mb-0">Couple Collection</h3>
-                    <p> NT$2,800  </p>
-                  </td>
-                  <td>
-                    <div class=" product__carouselItem  mb-1">
-                      <div class="product__img product__img__3"></div>
-                    </div>
-                    <h3 class="mb-0">Brotherhood Vase</h3>
-                    <p> NT$4,080  </p>
-                  </td>
-                  <td>
-                    <div class=" product__carouselItem  mb-1">
-                      <div class="product__img product__img__4"></div>
-                    </div>
-                    <h3 class="mb-0">Baifan Bowl</h3>
-                    <p> NT$1,080  </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="col">
+
+          
+          <!-- TODO:嘗試使用 Swiper，待調整-->
+          <!-- xl -->
+          <div class="d-xl-block d-none">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                  <ul class="row list-unstyled ">
+                    <li class="col-4 ">
+                      <div class=" product__carouselItem mb-1">
+                        <div class="product__img product__img__1 product__img--mark"></div>
+                      </div>
+                      <h3 class="mb-0">Tatami Cup</h3>
+                      <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                    </li>
+                    <li class="col-4 ">
+                      <div class=" product__carouselItem mb-1">
+                        <div class="product__img product__img__2 "></div>
+                      </div>
+                      <h3 class="mb-0">Couple Collection</h3>
+                      <p> NT$2,800 </p>
+                    </li>
+                    <li class="col-4 ">
+                      <div class=" product__carouselItem  mb-1">
+                        <div class="product__img product__img__3"></div>
+                      </div>
+                      <h3 class="mb-0">Brotherhood Vase</h3>
+                      <p> NT$4,080 </p>
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="swiper-slide ">
+                  <ul class="row list-unstyled d-flex">
+                    <li class="col-4">
+                      <div class=" product__carouselItem  mb-1">
+                        <div class="product__img product__img__4"></div>
+                      </div>
+                      <h3 class="mb-0">Baifan Bowl</h3>
+                      <p> NT$1,080 </p>
+                    </li>
+                    <li class="col-4">
+                      <div class=" product__carouselItem  mb-1">
+                        <div class="product__img product__img__5"></div>
+                      </div>
+                      <h3 class="mb-0">Baifan Bowl</h3>
+                      <p> NT$1,080 </p>
+                    </li>
+                    <li class="col-4">
+                      <div class=" product__carouselItem  mb-1">
+                        <div class="product__img product__img__6"></div>
+                      </div>
+                      <h3 class="mb-0">Baifan Bowl</h3>
+                      <p> NT$1,080 </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+
+          <!-- md -->
+          <div class="d-md-block d-xl-none d-none">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide   ">
+                  <ul class="row list-unstyled ">
+                    <li class="col-6">
+                      <div class=" product__carouselItem mb-1  ">
+                        <div class="product__img product__img__1 product__img--mark"></div>
+                      </div>
+                      <h3 class="mb-0">Tatami Cup</h3>
+                      <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                    </li>
+                    <li class="col-6 ">
+                      <div class=" product__carouselItem mb-1 ">
+                        <div class="product__img product__img__2 "></div>
+                      </div>
+                      <h3 class="mb-0">Couple Collection</h3>
+                      <p> NT$2,800 </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide    ">
+                  <ul class="row list-unstyled ">
+                    <li class="col-6 ">
+                      <div class=" product__carouselItem mb-1 ">
+                        <div class="product__img product__img__3 product__img--mark"></div>
+                      </div>
+                      <h3 class="mb-0">Tatami Cup</h3>
+                      <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                    </li>
+                    <li class="col-6 ">
+                      <div class=" product__carouselItem mb-1 ">
+                        <div class="product__img product__img__4 "></div>
+                      </div>
+                      <h3 class="mb-0">Couple Collection</h3>
+                      <p> NT$2,800 </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+
+          <!-- sm -->
+          <div class="d-md-none">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide ">
+                  <div class=" product__carouselItem mb-1 ">
+                    <div class="product__img product__img__1 product__img--mark"></div>
+                  </div>
+                  <h3 class="mb-0">Tatami Cup</h3>
+                  <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                </div>
+
+                <div class="swiper-slide ">
+                  <div class=" product__carouselItem mb-1 ">
+                    <div class="product__img product__img__2 product__img--mark"></div>
+                  </div>
+                  <h3 class="mb-0">Tatami Cup</h3>
+                  <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                </div>
+  
+              </div>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -274,10 +377,10 @@
 </main>
 
 
-  <footer class="footer">
-    <section class="section__subscribe d-flex align-items-center">
-      <div class="container ">
-        <div class="row">
+  <footer>
+    <section class="section__subscribe ">
+      <div class="container  h-100">
+        <div class="row  align-items-center h-100">
           <div class="col-xl-5 col-12">
             <form action="" class="d-flex flex-column justify-content-center mb-3">
               <label for="customEmail" class="h1 text-white d-none d-md-block  font-weight-bold mb-md-5 mb-3">Subscribe
@@ -299,7 +402,7 @@
       </div>
     </section>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="js-layout__navbar__footer navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
         <div class="d-none d-md-block">
           <div class="d-flex align-items-center ">
@@ -328,7 +431,7 @@
   </footer>
 
 
-
+  <!-- bootstrap 需求 -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -338,6 +441,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+
+  <!-- swiper -->
+  <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script> -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  
 
   <script src="assets/js/all.js"></script>
   <!-- <script src="assets/js/vendors.js"></script> -->

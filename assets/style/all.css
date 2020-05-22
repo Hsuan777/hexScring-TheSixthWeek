@@ -7608,7 +7608,10 @@ ul {
 
 .section__banner {
   position: relative;
-  height: 640px; }
+  height: 640px;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s; }
   @media (min-width: 768px) {
     .section__banner {
       height: 800px; } }
@@ -7621,7 +7624,7 @@ ul {
     bottom: 0;
     right: 0; }
     .section__banner__img__index {
-      background-image: url("../images/index_tom-crew-5HRCkrSs9Dk-unsplash-1280.jpg"); }
+      background-image: url("../images/index_tom-crew-5HRCkrSs9Dk-unsplash.jpg"); }
     .section__banner__img__welldone {
       background-image: url("../images/wellDone_annie-spratt-TEhfafMgFSM-unsplash.jpg"); }
 
@@ -7634,7 +7637,10 @@ ul {
 
 .section__product .product__innerBanner {
   position: relative;
-  height: 360px; }
+  height: 360px;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s; }
   @media (min-width: 768px) {
     .section__product .product__innerBanner {
       height: 442px; } }
@@ -7642,7 +7648,10 @@ ul {
 .section__product .product__shopcartItem {
   position: relative;
   width: 96px;
-  height: 96px; }
+  height: 96px;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s; }
   @media (min-width: 768px) {
     .section__product .product__shopcartItem {
       width: 112px;
@@ -7654,7 +7663,10 @@ ul {
 .section__product .product__carouselItem {
   position: relative;
   width: 240px;
-  height: 240px; }
+  height: 240px;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s; }
   @media (min-width: 768px) {
     .section__product .product__carouselItem {
       width: 350px;
@@ -7662,7 +7674,10 @@ ul {
 
 .section__product .product__waterfallItem {
   position: relative;
-  height: 161px; }
+  height: 161px;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s; }
   @media (min-width: 992px) {
     .section__product .product__waterfallItem--style1 {
       height: 240px; }
@@ -7724,10 +7739,23 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 224px; }
+  height: 224px;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s; }
   @media (min-width: 768px) {
     .section__subscribe {
       height: 400px; } }
+  .section__subscribe input[type="email"]::-webkit-input-placeholder {
+    color: #FFFFFF99; }
+  .section__subscribe input[type="email"]::-moz-placeholder {
+    color: #FFFFFF99; }
+  .section__subscribe input[type="email"]:-ms-input-placeholder {
+    color: #FFFFFF99; }
+  .section__subscribe input[type="email"]::-ms-input-placeholder {
+    color: #FFFFFF99; }
+  .section__subscribe input[type="email"]::placeholder {
+    color: #FFFFFF99; }
 
 .nav__productList .nav-link__text {
   position: relative; }
@@ -7760,21 +7788,6 @@ ul {
          -moz-column-count: 3;
               column-count: 3; } }
 
-.footer input[type="email"]::-webkit-input-placeholder {
-  color: #FFFFFF99; }
-
-.footer input[type="email"]::-moz-placeholder {
-  color: #FFFFFF99; }
-
-.footer input[type="email"]:-ms-input-placeholder {
-  color: #FFFFFF99; }
-
-.footer input[type="email"]::-ms-input-placeholder {
-  color: #FFFFFF99; }
-
-.footer input[type="email"]::placeholder {
-  color: #FFFFFF99; }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   .custom__text {
     background: -webkit-gradient(linear, left top, right top, from(black), to(white));
@@ -7805,9 +7818,10 @@ ul {
 .breadcrumb-item + .breadcrumb-item--style2::before {
   content: ">"; }
 
-@media (max-width: 991.98px) {
-  .text-white--md {
-    color: white; } }
+.transition {
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s; }
 
 .modal.right .modal-dialog {
   /* fixed會從左邊開始 */

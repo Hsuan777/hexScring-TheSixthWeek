@@ -22,15 +22,19 @@
   <!-- Google icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <!-- swiper -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
   <link rel="icon" href="assets/images/ANSWER.jpg" type="image/x-icon">
   <title>Product</title>
   <link rel="stylesheet" href="assets/style/all.css">
 </head>
 
-<body >
+<body>
 
   <!-- TODO:背景透明，會導致在某些區域不明顯 -->
-  <nav class="js__nav navbar navbar-expand-md  navbar-light bg-transparent ">
+  <nav class="js-layout__navbar navbar navbar-expand-md  navbar-light bg-transparent ">
     <div class="container">
       <!-- 收合開關 -->
       <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -50,7 +54,7 @@
       <!-- 導覽列，md以上顯示 -->
       <div class="d-md-block d-none ml-md-auto ">
         <div class="navbar-nav  align-items-center font-weight-bold">
-          <a class="nav-item nav-link rounded mr-5 custom__text" href="productList.html">Product </a>
+          <a class="nav-item nav-link rounded mr-5 " href="productList.html">Product </a>
           <a class="nav-item nav-link rounded mr-5 " href="#">Blog</a>
           <a class="nav-item nav-link rounded mr-5" href="#">Contact</a>
           <a class="nav-item nav-link rounded d-none d-md-block" href="#">
@@ -60,11 +64,11 @@
       </div>
 
       <!-- 購物車 icon，md以上隱藏 -->
-      <div class="navbar-nav">
+      <div class="js-layout__navbar navbar-nav">
         <a class="nav-item nav-link d-md-none " href="#"><span class="material-icons"> shopping_cart </span></a>
       </div>
 
-      
+
 
     </div>
 
@@ -88,8 +92,8 @@
         <div class="d-flex justify-content-between border-bottom border-black-50">
           <a class="nav-item nav-link  py-2 text-dark h3 mb-0" href="productList.html">Product
           </a>
-          <button class="js-btn btn btn-link  pr-0" type="button" data-toggle="collapse" data-target="#productList__view"
-            aria-expanded="false" aria-controls="userInfo__view">
+          <button class="js-btn btn btn-link  pr-0" type="button" data-toggle="collapse"
+            data-target="#productList__view" aria-expanded="false" aria-controls="userInfo__view">
             <span class=" js-btn___more material-icons text-dark "> expand_more </span>
           </button>
         </div>
@@ -97,19 +101,19 @@
           <nav class="nav__productList navbar  bg-white">
             <div class="navbar-nav  font-weight-bold">
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">All <sup>24</sup></span>  
+                <span class="nav-link__text">All <sup>24</sup></span>
               </a>
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">Bowl <sup>10</sup></span> 
+                <span class="nav-link__text">Bowl <sup>10</sup></span>
               </a>
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">Cup <sup class="digits">8</sup></span>  
+                <span class="nav-link__text">Cup <sup class="digits">8</sup></span>
               </a>
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">Plate <sup class="digits">3</sup></span> 
+                <span class="nav-link__text">Plate <sup class="digits">3</sup></span>
               </a>
               <a class="nav-item nav-link rounded  text-secondary" href="#">
-                <span class="nav-link__text">Vase <sup class="digits">3</sup></span> 
+                <span class="nav-link__text">Vase <sup class="digits">3</sup></span>
               </a>
             </div>
           </nav>
@@ -126,41 +130,135 @@
   <main>
   <section class="section__product mb-lg-5 mb-3">
 
-    <!-- 商品圖片，手機與平板，lg關閉 -->
-    <div class="product__innerBanner d-lg-none">
-      <div class="product__img product__img__1 product__img--mark "> </div>
-    </div>
-    
 
-    <div class="container ">
-      <div class="row align-items-lg-center align-items-start ">
-        <!-- TODO:區塊重疊 -->
-        <!-- 商品圖片，lg顯示 -->
-        <div class="col-xl-8 col-lg-7 d-none d-lg-block " >
-          <div class="product__innerBanner  rounded ">
-            <div class="product__img product__img__1 product__img--markLeft   "></div>
+    <!-- 手機與平板 -->
+    <div class=" container-fluid d-lg-none">
+      <div class="row">
+        <!-- 滿版圖 -->
+        <div class="product__innerBanner w-100">
+          <div class="product__img product__img__1 product__img--mark "> </div>
+        </div>
+        <!-- 商品價格內容 -->
+        <div class="container">
+          <div class="row">
+            <div class="col mt-n4 ">
+              <div class="card border-0 pl-4">
+                <div class="card-head ">
+                  <!-- 麵包屑 -->
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white pl-0 pt-0 mb-0 mt-4">
+                      <li class="breadcrumb-item text-secondary"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item text-secondary"><a href="productList.html">Product</a></li>
+                      <li class="breadcrumb-item text-secondary">Cup</li>
+                    </ol>
+                  </nav>
+                </div>
+                <div class="card-body pl-0 py-0 pr-md-0 mb-3">
+                  <!-- 商品名稱 -->
+                  <h2 class="h1 font-weight-bold">Tatami Cup</h2>
+                  <!-- 數量與價格  -->
+                  <div class="d-flex justify-content-between justify-content-md-end align-items-end">
+                    <nav aria-label="number navigation" class="d-md-none ">
+                      <div class="pagination   mr-1">
+                        <a class="page-item page-link border-0 bg-info " href="#">
+                          <span class="material-icons"> remove </span>
+                        </a>
+                        <a class="page-item page-link border-0 bg-info ">
+                          1
+                        </a>
+                        <a class="page-item page-link border-0 bg-info " href="#">
+                          <span class="material-icons"> add </span>
+                        </a>
+                      </div>
+                    </nav>
+                    <!-- 價格 -->
+                    <div class="text-right">
+                      <p class=" text-black-50 mb-0"><del>NT$1,200</del></p>
+                      <h3 class="font-weight-bold mb-0">NT$1,080</h3>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-footer d-flex justify-content-end bg-white border-top-0 pl-0 pr-md-0 pt-0 pb-4">
+                  <!-- 數量與 Add to cart按鈕 -->
+                  <nav aria-label="number navigation" class="d-md-block d-none">
+                    <div class="pagination pagination-lg  mr-1">
+                      <a class="page-item page-link border-0 bg-info " href="#">
+                        <span class="material-icons"> remove </span>
+                      </a>
+                      <a class="page-item page-link border-0 bg-info ">
+                        1
+                      </a>
+                      <a class="page-item page-link border-0 bg-info " href="#">
+                        <span class="material-icons"> add </span>
+                      </a>
+                    </div>
+                  </nav>
+
+                  <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- 商品內容 -->
-        <div class="col-xl-5 col-lg-6 col-12 mt-n4 mt-lg-0 ml-auto">
-          
-          <div class="card border-0 pl-4">
-            <div class="card-head ">
-              <!-- 麵包屑 -->
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-white pl-0 pt-0 mb-0 mt-4">
-                  <li class="breadcrumb-item text-secondary"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item text-secondary"><a href="productList.html">Product</a></li>
-                  <li class="breadcrumb-item text-secondary" >Cup</li>
-                </ol>
-              </nav>
-            </div>
-            <div class="card-body pl-0 py-0 pr-md-0 mb-3">
-              <!-- 商品名稱 -->
-              <h2 class="h1 font-weight-bold">Tatami Cup</h2>
-              <!-- 數量與價格 - 手機版型 -->
-              <div class="d-flex justify-content-between justify-content-md-end">
-                <nav aria-label="number navigation" class="d-md-none ">
+      </div>
+    </div>
+
+
+
+
+    <div class="d-none d-lg-block">
+      <div class="product__innerBanner container  ">
+        <div class="row d-flex align-items-center h-100 ">
+          <!-- 商品圖片，高度由背景圖撐開 -->
+          <div class="col-xl-8 col-lg-7 h-100" style="position:absolute; top: 0;">
+            <div class="product__img product__img__1 product__img--markLeft rounded  "></div>
+          </div>
+          <!-- 商品內容 -->
+          <div class="col-xl-5 col-lg-6  ml-auto ">
+
+            <div class="card border-0 pl-4">
+              <div class="card-head ">
+                <!-- 麵包屑 -->
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb bg-white pl-0 pt-0 mb-0 mt-4">
+                    <li class="breadcrumb-item text-secondary"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-secondary"><a href="productList.html">Product</a></li>
+                    <li class="breadcrumb-item text-secondary">Cup</li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="card-body pl-0 py-0 pr-md-0 mb-3">
+                <!-- 商品名稱 -->
+                <h2 class="h1 font-weight-bold">Tatami Cup</h2>
+                <!-- 數量與價格 - 手機版型 -->
+                <div class="d-flex justify-content-between justify-content-md-end">
+                  <nav aria-label="number navigation" class="d-md-none ">
+                    <div class="pagination pagination-lg  mr-1">
+                      <a class="page-item page-link border-0 bg-info " href="#">
+                        <span class="material-icons"> remove </span>
+                      </a>
+                      <a class="page-item page-link border-0 bg-info ">
+                        1
+                      </a>
+                      <a class="page-item page-link border-0 bg-info " href="#">
+                        <span class="material-icons"> add </span>
+                      </a>
+                    </div>
+                  </nav>
+                  <!-- 價格 -->
+                  <div class="text-right">
+                    <p class=" text-black-50 mb-0"><del>NT$1,200</del></p>
+                    <h3 class="font-weight-bold mb-0">NT$1,080</h3>
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer d-flex justify-content-end bg-white border-top-0 pl-0 pr-md-0 pt-0 pb-4">
+                <!-- 數量與價格 - 桌機版型 -->
+                <nav aria-label="number navigation" class="d-md-block d-none">
                   <div class="pagination pagination-lg  mr-1">
                     <a class="page-item page-link border-0 bg-info " href="#">
                       <span class="material-icons"> remove </span>
@@ -173,38 +271,17 @@
                     </a>
                   </div>
                 </nav>
-                <!-- 價格 -->
-                <div class="text-right">
-                  <p class=" text-black-50 mb-0"><del>NT$1,200</del></p>
-                  <h3 class="font-weight-bold mb-0">NT$1,080</h3>
-                </div>
+
+                <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcart">
+                  Add to cart
+                </button>
               </div>
-
             </div>
-            <div class="card-footer d-flex justify-content-end bg-white border-top-0 pl-0 pr-md-0 pt-0 pb-4">
-              <!-- 數量與價格 - 桌機版型 -->
-              <nav aria-label="number navigation" class="d-md-block d-none">
-                <div class="pagination pagination-lg  mr-1">
-                  <a class="page-item page-link border-0 bg-info " href="#">
-                    <span class="material-icons"> remove </span>
-                  </a>
-                  <a class="page-item page-link border-0 bg-info ">
-                    1
-                  </a>
-                  <a class="page-item page-link border-0 bg-info " href="#">
-                    <span class="material-icons"> add </span>
-                  </a>
-                </div>
-              </nav>
 
-              <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcart">
-                Add to cart
-              </button>
-            </div>
           </div>
-
         </div>
       </div>
+
     </div>
 
 
@@ -322,7 +399,7 @@
         </div>
       </div>
     </div>
-    </div>
+
 
   </section>
 
@@ -346,15 +423,150 @@
   </section>
 
   <!-- 可能也喜歡其他商品 -->
-  <section>
+  <section class="section__product mb-lg-5 mb-3">
     <div class="container">
       <div class="row">
         <div class="col">
           <h3 class="mb-3 font-weight-bold">You might also like…</h3>
 
-          <!-- TODO: swiper  -->
+          <!-- TODO:嘗試使用 Swiper，待調整-->
+          <!-- xl -->
+          <div class="d-xl-block d-none">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                  <ul class="row list-unstyled ">
+                    <li class="col-4 ">
+                      <div class=" product__carouselItem mb-1">
+                        <div class="product__img product__img__1 product__img--mark"></div>
+                      </div>
+                      <h3 class="mb-0">Tatami Cup</h3>
+                      <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                    </li>
+                    <li class="col-4 ">
+                      <div class=" product__carouselItem mb-1">
+                        <div class="product__img product__img__2 "></div>
+                      </div>
+                      <h3 class="mb-0">Couple Collection</h3>
+                      <p> NT$2,800 </p>
+                    </li>
+                    <li class="col-4 ">
+                      <div class=" product__carouselItem  mb-1">
+                        <div class="product__img product__img__3"></div>
+                      </div>
+                      <h3 class="mb-0">Brotherhood Vase</h3>
+                      <p> NT$4,080 </p>
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="swiper-slide ">
+                  <ul class="row list-unstyled d-flex">
+                    <li class="col-4">
+                      <div class=" product__carouselItem  mb-1">
+                        <div class="product__img product__img__4"></div>
+                      </div>
+                      <h3 class="mb-0">Baifan Bowl</h3>
+                      <p> NT$1,080 </p>
+                    </li>
+                    <li class="col-4">
+                      <div class=" product__carouselItem  mb-1">
+                        <div class="product__img product__img__5"></div>
+                      </div>
+                      <h3 class="mb-0">Baifan Bowl</h3>
+                      <p> NT$1,080 </p>
+                    </li>
+                    <li class="col-4">
+                      <div class=" product__carouselItem  mb-1">
+                        <div class="product__img product__img__6"></div>
+                      </div>
+                      <h3 class="mb-0">Baifan Bowl</h3>
+                      <p> NT$1,080 </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+
+          <!-- md -->
+          <div class="d-md-block d-xl-none d-none">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide   ">
+                  <ul class="row list-unstyled ">
+                    <li class="col-6">
+                      <div class=" product__carouselItem mb-1  ">
+                        <div class="product__img product__img__1 product__img--mark"></div>
+                      </div>
+                      <h3 class="mb-0">Tatami Cup</h3>
+                      <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                    </li>
+                    <li class="col-6 ">
+                      <div class=" product__carouselItem mb-1 ">
+                        <div class="product__img product__img__2 "></div>
+                      </div>
+                      <h3 class="mb-0">Couple Collection</h3>
+                      <p> NT$2,800 </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide    ">
+                  <ul class="row list-unstyled ">
+                    <li class="col-6 ">
+                      <div class=" product__carouselItem mb-1 ">
+                        <div class="product__img product__img__3 product__img--mark"></div>
+                      </div>
+                      <h3 class="mb-0">Tatami Cup</h3>
+                      <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                    </li>
+                    <li class="col-6 ">
+                      <div class=" product__carouselItem mb-1 ">
+                        <div class="product__img product__img__4 "></div>
+                      </div>
+                      <h3 class="mb-0">Couple Collection</h3>
+                      <p> NT$2,800 </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+
+          <!-- sm -->
+          <div class="d-md-none">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide ">
+                  <div class=" product__carouselItem mb-1 ">
+                    <div class="product__img product__img__1 product__img--mark"></div>
+                  </div>
+                  <h3 class="mb-0">Tatami Cup</h3>
+                  <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                </div>
+
+                <div class="swiper-slide ">
+                  <div class=" product__carouselItem mb-1 ">
+                    <div class="product__img product__img__2 product__img--mark"></div>
+                  </div>
+                  <h3 class="mb-0">Tatami Cup</h3>
+                  <p> NT$1,080 <del class="ml-1 text-black-50">NT$1,200</del> </p>
+                </div>
+
+              </div>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
         </div>
+
       </div>
+    </div>
     </div>
   </section>
 
@@ -362,10 +574,10 @@
 </main>
 
 
-  <footer class="footer">
-    <section class="section__subscribe d-flex align-items-center">
-      <div class="container ">
-        <div class="row">
+  <footer>
+    <section class="section__subscribe ">
+      <div class="container  h-100">
+        <div class="row  align-items-center h-100">
           <div class="col-xl-5 col-12">
             <form action="" class="d-flex flex-column justify-content-center mb-3">
               <label for="customEmail" class="h1 text-white d-none d-md-block  font-weight-bold mb-md-5 mb-3">Subscribe
@@ -387,7 +599,7 @@
       </div>
     </section>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="js-layout__navbar__footer navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
         <div class="d-none d-md-block">
           <div class="d-flex align-items-center ">
@@ -416,7 +628,7 @@
   </footer>
 
 
-
+  <!-- bootstrap 需求 -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -426,6 +638,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+
+  <!-- swiper -->
+  <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script> -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  
 
   <script src="assets/js/all.js"></script>
   <!-- <script src="assets/js/vendors.js"></script> -->
