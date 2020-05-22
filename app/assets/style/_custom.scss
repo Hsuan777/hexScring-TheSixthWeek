@@ -2,6 +2,7 @@
   &__banner {
     position: relative;
     height: 640px;
+    transition: all 0.35s;
     @include media-breakpoint-up(md) {
       height: 800px;
     }
@@ -34,6 +35,7 @@
       &__innerBanner {
         position: relative;
         height: 360px;
+        transition: all 0.35s;
         @include media-breakpoint-up(md) {
           height: 442px;
         }
@@ -42,6 +44,7 @@
         position: relative;
         width: 96px;
         height: 96px;
+        transition: all 0.35s;
         @include media-breakpoint-up(md) {
           width: 112px;
           height: 112px;
@@ -55,6 +58,7 @@
         position: relative;
         width: 240px;
         height: 240px;
+        transition: all 0.35s;
         @include media-breakpoint-up(md) {
           width: 350px;
           height: 350px;
@@ -63,6 +67,7 @@
       &__waterfallItem {
         position: relative;
         height: 161px;
+        transition: all 0.35s;
         @include media-breakpoint-up(lg) {
           &--style1 {
             height: 240px;
@@ -165,8 +170,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 224px;
+    transition: all 0.35s;
     @include media-breakpoint-up(md) {
       height: 400px;
+    }
+    input[type="email"] {
+      &::placeholder {
+        color: map-get($theme-colors, third);
+      }
     }
   }
 }
@@ -206,13 +217,6 @@
   }
 }
 
-.footer {
-  input[type="email"] {
-    &::placeholder {
-      color: map-get($theme-colors, third);
-    }
-  }
-}
 
 .custom {
   &__text {
@@ -247,8 +251,6 @@
   }
 }
 
-@include media-breakpoint-down(md) {
-  .text-white--md {
-    color: white;
-  }
+.transition{
+  transition: all 0.35s;
 }

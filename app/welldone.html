@@ -8,9 +8,9 @@ current: welldone
 <main>
 
   <section class="section__banner d-flex align-items-md-center align-items-center ">
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div class="row ">
-        <div class="container ">
+        <div class="container">
           <div class="row ">
             <div class="col-md-6 col-12 " style="z-index: 99;">
               <div class="d-md-block d-none">
@@ -18,16 +18,19 @@ current: welldone
                 <p class="h3 mb-5">Your order has been received. We’II email you an order confirmation with details.</p>
                 <a href="productList.html" class="btn btn-primary btn-lg mt-5    font-weight-bold">Continue shopping</a>
               </div>
-              <!-- TODO:手機版 文字置中 -->
               <div class="d-md-none text-white">
                 <h3 class="h1 mb-3 text-center font-weight-bold">Well Done!</h3>
                 <p class="mb-5 text-third text-center">Your order has been received. We’II email you an order confirmation with details.</p>
-                <a href="productList.html" class="btn btn-primary btn-lg mt-5  mb-3 font-weight-bold d-block">Continue shopping</a>
+                <a href="productList.html" class="btn btn-primary btn-lg mt-5  mb-3 font-weight-bold d-md-blcok d-none">Continue shopping</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="section__banner__img section__banner__img__welldone col-md-6 col-12  "> </div>
+        <div class="section__banner__img section__banner__img__welldone col-md-6 col-12  ">
+          <div class="d-flex align-items-end h-100">
+            <a href="productList.html" class="btn btn-primary btn-lg mt-5  mb-3 font-weight-bold  w-100 d-md-none">Continue shopping</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

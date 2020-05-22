@@ -34,7 +34,7 @@
 <body>
 
   <!-- TODO:背景透明，會導致在某些區域不明顯 -->
-  <nav class="js__nav navbar navbar-expand-md  navbar-light bg-transparent ">
+  <nav class="js-layout__navbar navbar navbar-expand-md  navbar-light bg-transparent ">
     <div class="container">
       <!-- 收合開關 -->
       <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -54,7 +54,7 @@
       <!-- 導覽列，md以上顯示 -->
       <div class="d-md-block d-none ml-md-auto ">
         <div class="navbar-nav  align-items-center font-weight-bold">
-          <a class="nav-item nav-link rounded mr-5 custom__text" href="productList.html">Product </a>
+          <a class="nav-item nav-link rounded mr-5 " href="productList.html">Product </a>
           <a class="nav-item nav-link rounded mr-5 " href="#">Blog</a>
           <a class="nav-item nav-link rounded mr-5" href="#">Contact</a>
           <a class="nav-item nav-link rounded d-none d-md-block" href="#">
@@ -64,7 +64,7 @@
       </div>
 
       <!-- 購物車 icon，md以上隱藏 -->
-      <div class="navbar-nav">
+      <div class="js-layout__navbar navbar-nav">
         <a class="nav-item nav-link d-md-none " href="#"><span class="material-icons"> shopping_cart </span></a>
       </div>
 
@@ -130,10 +130,10 @@
   <%- contents %>
 
 
-  <footer class="footer">
-    <section class="section__subscribe d-flex align-items-center">
-      <div class="container ">
-        <div class="row">
+  <footer>
+    <section class="section__subscribe ">
+      <div class="container  h-100">
+        <div class="row  align-items-center h-100">
           <div class="col-xl-5 col-12">
             <form action="" class="d-flex flex-column justify-content-center mb-3">
               <label for="customEmail" class="h1 text-white d-none d-md-block  font-weight-bold mb-md-5 mb-3">Subscribe
@@ -155,7 +155,7 @@
       </div>
     </section>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="js-layout__navbar__footer navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
         <div class="d-none d-md-block">
           <div class="d-flex align-items-center ">

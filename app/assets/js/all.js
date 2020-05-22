@@ -4,17 +4,27 @@ $(document).ready(() => {
   
   switch($('title').text()){
     case "Craftsman":
-      $(".js__nav").addClass("fixed-top navbar-dark");
-      
+      $(".js-layout__navbar").addClass("fixed-top navbar-dark");
+      $('a[href="productList.html"]').addClass('custom__text');
       break;
     case "ProductList":
-      $('a[href="productList.html"]').addClass('active').removeClass('custom__text');
+      $('a[href="productList.html"]').addClass('active');
       break;
     case "Product":
-      $('a[href="productList.html"]').addClass('active').removeClass('custom__text');
+      $('a[href="productList.html"]').addClass('active');
       break;
     case "Information":
-      $('a[href="productList.html"]').removeClass('custom__text');
+      $(".section__subscribe").hide();
+      $(".js-layout__navbar__nav").hide();
+      $(".js-layout__navbar__footer").hide();
+      break;
+    case "Payment":
+      $(".section__subscribe").hide();
+      $(".js-layout__navbar__footer").hide();
+      break;
+    case "Well Done":
+      $(".section__subscribe").hide();
+      $(".js-layout__navbar__footer").hide();
       break;
   }
   // 箭頭方向改變，提醒有折疊內容
