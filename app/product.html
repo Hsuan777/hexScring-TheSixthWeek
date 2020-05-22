@@ -7,41 +7,135 @@ current: product
 <main>
   <section class="section__product mb-lg-5 mb-3">
 
-    <!-- 商品圖片，手機與平板，lg關閉 -->
-    <div class="product__innerBanner d-lg-none">
-      <div class="product__img product__img__1 product__img--mark "> </div>
-    </div>
-    
 
-    <div class="container ">
-      <div class="row align-items-lg-center align-items-start ">
-        <!-- TODO:區塊重疊 -->
-        <!-- 商品圖片，lg顯示 -->
-        <div class="col-xl-8 col-lg-7 d-none d-lg-block " >
-          <div class="product__innerBanner  rounded ">
-            <div class="product__img product__img__1 product__img--markLeft   "></div>
+    <!-- 手機與平板 -->
+    <div class=" container-fluid d-lg-none">
+      <div class="row">
+        <!-- 滿版圖 -->
+        <div class="product__innerBanner w-100">
+          <div class="product__img product__img__1 product__img--mark "> </div>
+        </div>
+        <!-- 商品價格內容 -->
+        <div class="container">
+          <div class="row">
+            <div class="col mt-n4 ">
+              <div class="card border-0 pl-4">
+                <div class="card-head ">
+                  <!-- 麵包屑 -->
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white pl-0 pt-0 mb-0 mt-4">
+                      <li class="breadcrumb-item text-secondary"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item text-secondary"><a href="productList.html">Product</a></li>
+                      <li class="breadcrumb-item text-secondary">Cup</li>
+                    </ol>
+                  </nav>
+                </div>
+                <div class="card-body pl-0 py-0 pr-md-0 mb-3">
+                  <!-- 商品名稱 -->
+                  <h2 class="h1 font-weight-bold">Tatami Cup</h2>
+                  <!-- 數量與價格  -->
+                  <div class="d-flex justify-content-between justify-content-md-end align-items-end">
+                    <nav aria-label="number navigation" class="d-md-none ">
+                      <div class="pagination   mr-1">
+                        <a class="page-item page-link border-0 bg-info " href="#">
+                          <span class="material-icons"> remove </span>
+                        </a>
+                        <a class="page-item page-link border-0 bg-info ">
+                          1
+                        </a>
+                        <a class="page-item page-link border-0 bg-info " href="#">
+                          <span class="material-icons"> add </span>
+                        </a>
+                      </div>
+                    </nav>
+                    <!-- 價格 -->
+                    <div class="text-right">
+                      <p class=" text-black-50 mb-0"><del>NT$1,200</del></p>
+                      <h3 class="font-weight-bold mb-0">NT$1,080</h3>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-footer d-flex justify-content-end bg-white border-top-0 pl-0 pr-md-0 pt-0 pb-4">
+                  <!-- 數量與 Add to cart按鈕 -->
+                  <nav aria-label="number navigation" class="d-md-block d-none">
+                    <div class="pagination pagination-lg  mr-1">
+                      <a class="page-item page-link border-0 bg-info " href="#">
+                        <span class="material-icons"> remove </span>
+                      </a>
+                      <a class="page-item page-link border-0 bg-info ">
+                        1
+                      </a>
+                      <a class="page-item page-link border-0 bg-info " href="#">
+                        <span class="material-icons"> add </span>
+                      </a>
+                    </div>
+                  </nav>
+
+                  <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- 商品內容 -->
-        <div class="col-xl-5 col-lg-6 col-12 mt-n4 mt-lg-0 ml-auto">
-          
-          <div class="card border-0 pl-4">
-            <div class="card-head ">
-              <!-- 麵包屑 -->
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-white pl-0 pt-0 mb-0 mt-4">
-                  <li class="breadcrumb-item text-secondary"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item text-secondary"><a href="productList.html">Product</a></li>
-                  <li class="breadcrumb-item text-secondary" >Cup</li>
-                </ol>
-              </nav>
-            </div>
-            <div class="card-body pl-0 py-0 pr-md-0 mb-3">
-              <!-- 商品名稱 -->
-              <h2 class="h1 font-weight-bold">Tatami Cup</h2>
-              <!-- 數量與價格 - 手機版型 -->
-              <div class="d-flex justify-content-between justify-content-md-end">
-                <nav aria-label="number navigation" class="d-md-none ">
+      </div>
+    </div>
+
+
+
+
+    <div class="d-none d-lg-block">
+      <div class="product__innerBanner container  ">
+        <div class="row d-flex align-items-center h-100 ">
+          <!-- 商品圖片，高度由背景圖撐開 -->
+          <div class="col-xl-8 col-lg-7 h-100" style="position:absolute; top: 0;">
+            <div class="product__img product__img__1 product__img--markLeft rounded  "></div>
+          </div>
+          <!-- 商品內容 -->
+          <div class="col-xl-5 col-lg-6  ml-auto ">
+  
+            <div class="card border-0 pl-4">
+              <div class="card-head ">
+                <!-- 麵包屑 -->
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb bg-white pl-0 pt-0 mb-0 mt-4">
+                    <li class="breadcrumb-item text-secondary"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-secondary"><a href="productList.html">Product</a></li>
+                    <li class="breadcrumb-item text-secondary">Cup</li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="card-body pl-0 py-0 pr-md-0 mb-3">
+                <!-- 商品名稱 -->
+                <h2 class="h1 font-weight-bold">Tatami Cup</h2>
+                <!-- 數量與價格 - 手機版型 -->
+                <div class="d-flex justify-content-between justify-content-md-end">
+                  <nav aria-label="number navigation" class="d-md-none ">
+                    <div class="pagination pagination-lg  mr-1">
+                      <a class="page-item page-link border-0 bg-info " href="#">
+                        <span class="material-icons"> remove </span>
+                      </a>
+                      <a class="page-item page-link border-0 bg-info ">
+                        1
+                      </a>
+                      <a class="page-item page-link border-0 bg-info " href="#">
+                        <span class="material-icons"> add </span>
+                      </a>
+                    </div>
+                  </nav>
+                  <!-- 價格 -->
+                  <div class="text-right">
+                    <p class=" text-black-50 mb-0"><del>NT$1,200</del></p>
+                    <h3 class="font-weight-bold mb-0">NT$1,080</h3>
+                  </div>
+                </div>
+  
+              </div>
+              <div class="card-footer d-flex justify-content-end bg-white border-top-0 pl-0 pr-md-0 pt-0 pb-4">
+                <!-- 數量與價格 - 桌機版型 -->
+                <nav aria-label="number navigation" class="d-md-block d-none">
                   <div class="pagination pagination-lg  mr-1">
                     <a class="page-item page-link border-0 bg-info " href="#">
                       <span class="material-icons"> remove </span>
@@ -54,38 +148,17 @@ current: product
                     </a>
                   </div>
                 </nav>
-                <!-- 價格 -->
-                <div class="text-right">
-                  <p class=" text-black-50 mb-0"><del>NT$1,200</del></p>
-                  <h3 class="font-weight-bold mb-0">NT$1,080</h3>
-                </div>
+  
+                <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcart">
+                  Add to cart
+                </button>
               </div>
-
             </div>
-            <div class="card-footer d-flex justify-content-end bg-white border-top-0 pl-0 pr-md-0 pt-0 pb-4">
-              <!-- 數量與價格 - 桌機版型 -->
-              <nav aria-label="number navigation" class="d-md-block d-none">
-                <div class="pagination pagination-lg  mr-1">
-                  <a class="page-item page-link border-0 bg-info " href="#">
-                    <span class="material-icons"> remove </span>
-                  </a>
-                  <a class="page-item page-link border-0 bg-info ">
-                    1
-                  </a>
-                  <a class="page-item page-link border-0 bg-info " href="#">
-                    <span class="material-icons"> add </span>
-                  </a>
-                </div>
-              </nav>
-
-              <button class="btn btn-primary btn-lg  w-100" data-toggle="modal" data-target="#shopcart">
-                Add to cart
-              </button>
-            </div>
+  
           </div>
-
         </div>
       </div>
+
     </div>
 
 
@@ -203,7 +276,7 @@ current: product
         </div>
       </div>
     </div>
-    </div>
+
 
   </section>
 
